@@ -1,0 +1,9 @@
+{
+    "variants": {
+ 		"type=north": { "model": "addendum:block/end_stone_vertical_slab", "y": 0, "uvlock": true },
+ 		"type=south": { "model": "addendum:block/end_stone_vertical_slab", "y": 180, "uvlock": true },
+  		"type=east": { "model": "addendum:block/end_stone_vertical_slab", "y": 90, "uvlock": true },
+ 		"type=west": { "model": "addendum:block/end_stone_vertical_slab", "y": 270, "uvlock": true },
+        "type=double": { "model": "minecraft:block/end_stone" }
+    }
+}

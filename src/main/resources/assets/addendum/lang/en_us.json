@@ -1,3 +1,22 @@
 {
+	"block.addendum.end_stone_slab": "End Stone Slab",
+	"block.addendum.end_stone_stairs": "End Stone Stairs",
+	"block.addendum.end_stone_wall": "End Stone Wall",
+	"block.addendum.end_stone_vertical_slab": "End Stone Vertical Slab",
 	
+	"block.addendum.polished_end_stone": "Polished End Stone",
+	"block.addendum.polished_end_stone_slab": "Polished End Stone Slab",
+	"block.addendum.polished_end_stone_stairs": "Polished End Stone Stairs",
+	"block.addendum.polished_end_stone_wall": "Polished End Stone Wall",
+	"block.addendum.polished_end_stone_vertical_slab": "Polished End Stone Vertical Slab",
+	
+	"block.addendum.cracked_end_stone_bricks": "Cracked End Stone Bricks",
+	"block.addendum.cracked_end_stone_brick_slab": "Cracked End Stone Brick Slab",
+	"block.addendum.cracked_end_stone_brick_stairs": "Cracked End Stone Brick Stairs",
+	"block.addendum.cracked_end_stone_brick_wall": "Cracked End Stone Brick Wall",
+	"block.addendum.cracked_end_stone_brick_vertical_slab": "Cracked End Stone Brick Vertical Slab",
+	
+	"block.addendum.chorusy_end_stone_bricks": "Chorusy End Stone Bricks",
+	"block.addendum.chiseled_polished_end_stone": "Chiseled Polished End Stone",
+	"block.addendum.chiseled_end_stone_bricks": "Chiseled End Stone Bricks"
 }

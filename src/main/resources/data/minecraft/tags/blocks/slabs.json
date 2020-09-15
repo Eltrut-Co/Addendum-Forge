@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "addendum:end_stone_slab",
+	"addendum:polished_end_stone_slab",
+	"addendum:cracked_end_stone_brick_slab"
+  ]
+}

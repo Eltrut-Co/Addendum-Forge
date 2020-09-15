@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "addendum:block/polished_end_stone_slab"
+    },
+    "type=double": {
+      "model": "addendum:block/polished_end_stone"
+    },
+    "type=top": {
+      "model": "addendum:block/polished_end_stone_slab_top"
+    }
+  }
+}

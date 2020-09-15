@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "addendum:end_stone_wall",
+	"addendum:polished_end_stone_wall",
+	"addendum:cracked_end_stone_brick_wall"
+  ]
+}
