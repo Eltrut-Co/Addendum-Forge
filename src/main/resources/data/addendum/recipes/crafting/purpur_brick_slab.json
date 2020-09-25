@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "addendum:purpur_bricks"
+    }
+  },
+  "result": {
+    "item": "addendum:purpur_brick_slab",
+    "count": 6
+  }
+}

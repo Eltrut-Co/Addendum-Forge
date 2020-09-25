@@ -63,6 +63,9 @@ public class BlockInit {
 	public static final RegistryObject<Block> MIDORI_BRICK_WALL = HELPER.createCompatBlock("quark", "midori_brick_wall", () -> new WallBlock(Properties.MIDORI), ItemGroup.DECORATIONS);
 	public static final RegistryObject<Block> MIDORI_BRICK_VERTICAL_SLAB = HELPER.createCompatBlock("quark", "midori_brick_vertical_slab", () -> new VerticalSlabBlock(Properties.MIDORI), ItemGroup.BUILDING_BLOCKS);
 	
+	public static final RegistryObject<Block> CHISELED_MIDORI_BLOCK = HELPER.createCompatBlock("quark", "chiseled_midori_block", () -> new Block(Properties.MIDORI), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> CACTUS_BLOCK = HELPER.createCompatBlock("quark", "cactus_block", () -> new Block(Block.Properties.from(Blocks.GREEN_WOOL)), ItemGroup.DECORATIONS);
+	
 	// Shulker
 	public static final RegistryObject<Block> SHULKER_BLOCK = HELPER.createBlock("shulker_block", () -> new Block(Block.Properties.from(Blocks.SHULKER_BOX)), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> SHULKER_SWIRL = HELPER.createBlock("shulker_swirl", () -> new Block(Block.Properties.from(Blocks.SHULKER_BOX)), ItemGroup.BUILDING_BLOCKS);

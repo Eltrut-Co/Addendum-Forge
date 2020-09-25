@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "addendum:shulker_block"
+  },
+  "result": "addendum:shulker_swirl",
+  "experience": 0.1,
+  "cookingtime": 200
+}

@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/inner_stairs",
+    "textures": {
+        "bottom": "addendum:block/purpur_bricks",
+        "top": "addendum:block/purpur_bricks",
+        "side": "addendum:block/purpur_bricks"
+    }
+}

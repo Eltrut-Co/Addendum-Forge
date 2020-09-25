@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "addendum:chorus_block"
+    }
+  ],
+  "result": {
+    "item": "minecraft:chorus_fruit",
+    "count": 9
+  }
+}

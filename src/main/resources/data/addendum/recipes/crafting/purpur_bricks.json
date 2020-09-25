@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:purpur_block"
+    }
+  },
+  "result": {
+    "item": "addendum:purpur_bricks",
+    "count": 4
+  }
+}

@@ -18,5 +18,26 @@
 	
 	"block.addendum.chorusy_end_stone_bricks": "Chorusy End Stone Bricks",
 	"block.addendum.chiseled_polished_end_stone": "Chiseled Polished End Stone",
-	"block.addendum.chiseled_end_stone_bricks": "Chiseled End Stone Bricks"
+	"block.addendum.chiseled_end_stone_bricks": "Chiseled End Stone Bricks",
+	
+	"block.addendum.purpur_bricks": "Purpur Bricks",
+	"block.addendum.purpur_brick_slab": "Purpur Brick Slab",
+	"block.addendum.purpur_brick_stairs": "Purpur Brick Stairs",
+	"block.addendum.purpur_brick_wall": "Purpur Brick Wall",
+	"block.addendum.purpur_brick_vertical_slab": "Purpur Brick Vertical Slab",
+	
+	"block.addendum.chiseled_purpur_block": "Chiseled Purpur Block",
+	"block.addendum.chorus_block": "Chorus Block",
+	
+	"block.addendum.midori_bricks": "Midori Bricks",
+	"block.addendum.midori_brick_slab": "Midori Brick Slab",
+	"block.addendum.midori_brick_stairs": "Midori Brick Stairs",
+	"block.addendum.midori_brick_wall": "Midori Brick Wall",
+	"block.addendum.midori_brick_vertical_slab": "Midori Brick Vertical Slab",
+	
+	"block.addendum.chiseled_midori_block": "Chiseled Midori Block",
+	"block.addendum.cactus_block": "Cactus Block",
+	
+	"block.addendum.shulker_block": "Shulker Block",
+	"block.addendum.shulker_swirl": "Shulker Swirl"
 }

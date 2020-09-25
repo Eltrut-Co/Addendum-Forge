@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "addendum:block/purpur_brick_slab"
+    },
+    "type=double": {
+      "model": "addendum:block/purpur_bricks"
+    },
+    "type=top": {
+      "model": "addendum:block/purpur_brick_slab_top"
+    }
+  }
+}
