@@ -17,14 +17,14 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.0'
+version = "${mc_version}-${mod_version}"
 group = 'eltrut.addendum' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'addendum'
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 
 minecraft {
-    mappings channel: 'snapshot', version: '20200820-1.16.1'
+    mappings channel: 'snapshot', version: '20200723-1.16.1'
     runs {
         client {
             workingDirectory project.file('run')
@@ -75,18 +75,20 @@ minecraft {
 dependencies {
     minecraft 'net.minecraftforge:forge:1.16.1-32.0.108'
     implementation fg.deobf("curse.maven:abnormals-core:3043251")
+    implementation fg.deobf("curse.maven:autoreglib:3017289")
+    implementation fg.deobf("curse.maven:quark:3061023")
 
 }
 
 jar {
     manifest {
         attributes([
-            "Specification-Title": "examplemod",
-            "Specification-Vendor": "examplemodsareus",
+            "Specification-Title": "Smithable",
+            "Specification-Vendor": "EltrutLikes",
             "Specification-Version": "1",
             "Implementation-Title": project.name,
             "Implementation-Version": "${version}",
-            "Implementation-Vendor" :"examplemodsareus",
+            "Implementation-Vendor" :"EltrutLikes",
             "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }

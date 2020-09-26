@@ -6,10 +6,11 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:purpur_slab"
+      "item": "minecraft:purpur_block"
     }
   },
   "result": {
-    "item": "addendum:chiseled_purpur_block"
+    "item": "addendum:chiseled_purpur_block",
+	"count": 2
   }
 }

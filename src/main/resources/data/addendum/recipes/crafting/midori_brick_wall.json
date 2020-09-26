@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "addendum:midori_bricks"
+    }
+  },
+  "result": {
+    "item": "addendum:midori_brick_wall",
+    "count": 6
+  },
+  "conditions": [
+    {
+      "type": "abnormals_core:quark_flag",
+      "flag": "midori"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "addendum:block/midori_bricks",
+    "top": "addendum:block/midori_bricks",
+    "side": "addendum:block/midori_bricks"
+  }
+}

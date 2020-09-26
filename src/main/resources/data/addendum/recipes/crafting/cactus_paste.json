@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "addendum:cactus_block"
+    }
+  ],
+  "result": {
+    "item": "quark:cactus_paste",
+    "count": 9
+  },
+  "conditions": [
+    {
+      "type": "abnormals_core:quark_flag",
+      "flag": "midori"
+    }
+  ]
+}

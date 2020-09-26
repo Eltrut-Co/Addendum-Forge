@@ -57,6 +57,7 @@ public class BlockInit {
 	public static final RegistryObject<Block> CHORUS_BLOCK = HELPER.createBlock("chorus_block", () -> new Block(Block.Properties.from(Blocks.MAGENTA_WOOL)), ItemGroup.DECORATIONS);
 	
 	// Midori
+	// retexture midori bricks etc. to fit with Quark palette
 	public static final RegistryObject<Block> MIDORI_BRICKS = HELPER.createCompatBlock("quark", "midori_bricks", () -> new Block(Properties.MIDORI), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> MIDORI_BRICK_SLAB = HELPER.createCompatBlock("quark", "midori_brick_slab", () -> new SlabBlock(Properties.MIDORI), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> MIDORI_BRICK_STAIRS = HELPER.createCompatBlock("quark", "midori_brick_stairs", () -> new AbnormalsStairsBlock(MIDORI_BRICKS.get().getDefaultState(), Properties.MIDORI), ItemGroup.BUILDING_BLOCKS);
@@ -64,7 +65,7 @@ public class BlockInit {
 	public static final RegistryObject<Block> MIDORI_BRICK_VERTICAL_SLAB = HELPER.createCompatBlock("quark", "midori_brick_vertical_slab", () -> new VerticalSlabBlock(Properties.MIDORI), ItemGroup.BUILDING_BLOCKS);
 	
 	public static final RegistryObject<Block> CHISELED_MIDORI_BLOCK = HELPER.createCompatBlock("quark", "chiseled_midori_block", () -> new Block(Properties.MIDORI), ItemGroup.BUILDING_BLOCKS);
-	public static final RegistryObject<Block> CACTUS_BLOCK = HELPER.createCompatBlock("quark", "cactus_block", () -> new Block(Block.Properties.from(Blocks.GREEN_WOOL)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> CACTUS_BLOCK = HELPER.createCompatBlock("quark", "cactus_block", () -> new Block(Block.Properties.from(Blocks.LIME_WOOL)), ItemGroup.DECORATIONS);
 	
 	// Shulker
 	public static final RegistryObject<Block> SHULKER_BLOCK = HELPER.createBlock("shulker_block", () -> new Block(Block.Properties.from(Blocks.SHULKER_BOX)), ItemGroup.BUILDING_BLOCKS);
