@@ -83,7 +83,7 @@ dependencies {
 jar {
     manifest {
         attributes([
-            "Specification-Title": "Smithable",
+            "Specification-Title": "Addendum",
             "Specification-Vendor": "EltrutLikes",
             "Specification-Version": "1",
             "Implementation-Title": project.name,
