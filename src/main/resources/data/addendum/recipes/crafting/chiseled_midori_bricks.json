@@ -1,17 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "###",
-    "###",
-    "###"
+    "#",
+    "#"
   ],
   "key": {
     "#": {
-      "item": "quark:cactus_paste"
+      "item": "addendum:midori_bricks"
     }
   },
   "result": {
-    "item": "addendum:cactus_block"
+    "item": "addendum:chiseled_midori_block",
+	"count": 2
   },
   "conditions": [
     {

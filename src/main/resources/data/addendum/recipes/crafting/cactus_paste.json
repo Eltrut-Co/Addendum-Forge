@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "addendum:cactus_block"
+      "item": "addendum:cactus_paste_block"
     }
   ],
   "result": {

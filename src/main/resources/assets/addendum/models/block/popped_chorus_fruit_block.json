@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:block/cube_all",
     "textures": {
-        "all": "addendum:block/cactus_block"
+        "all": "addendum:block/popped_chorus_fruit_block"
     }
 }

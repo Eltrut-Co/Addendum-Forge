@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "addendum:chorus_block"
+          "name": "addendum:popped_chorus_fruit_block"
         }
       ],
       "conditions": [

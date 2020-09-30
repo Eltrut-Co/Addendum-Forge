@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "addendum:chorus_block"
+      "item": "addendum:popped_chorus_fruit_block"
     }
   ],
   "result": {
