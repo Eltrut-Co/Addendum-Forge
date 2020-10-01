@@ -6,12 +6,11 @@
   ],
   "key": {
     "#": {
-      "item": "addendum:midori_bricks"
+      "item": "addendum:midori_brick_slab"
     }
   },
   "result": {
-    "item": "addendum:chiseled_midori_block",
-	"count": 2
+    "item": "addendum:chiseled_midori_bricks"
   },
   "conditions": [
     {

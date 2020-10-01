@@ -7,5 +7,11 @@
   ],
   "result": {
     "item": "minecraft:purple_dye"
-  }
+  },
+  "conditions": [
+    {
+      "type": "abnormals_core:quark_flag",
+      "flag": "midori"
+    }
+  ]
 }

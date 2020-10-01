@@ -19,7 +19,7 @@ public class Addendum
 {
     private static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "addendum";
-    public static final RegistryHelper REGISTRY_HELPER = new RegistryHelper(MOD_ID);
+    public static final AddendumRegistryHelper REGISTRY_HELPER = new AddendumRegistryHelper(MOD_ID);
     public static Addendum instance;
 
     IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();

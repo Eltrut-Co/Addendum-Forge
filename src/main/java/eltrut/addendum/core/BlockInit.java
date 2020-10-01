@@ -18,7 +18,7 @@ import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 
 @Mod.EventBusSubscriber(modid = Addendum.MOD_ID, bus = Bus.MOD)
 public class BlockInit {
-	public static final RegistryHelper HELPER = Addendum.REGISTRY_HELPER;
+	public static final AddendumRegistryHelper HELPER = Addendum.REGISTRY_HELPER;
 	
 	public static class Properties {
 		public static final Block.Properties MIDORI = Block.Properties.create(Material.ROCK, MaterialColor.LIME).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(1.5F, 6.0F);
@@ -40,7 +40,7 @@ public class BlockInit {
 	public static final RegistryObject<Block> CRACKED_END_STONE_BRICK_SLAB = HELPER.createCompatBlock("lepton", "cracked_end_stone_brick_slab", () -> new SlabBlock(Block.Properties.from(Blocks.END_STONE_BRICKS)), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> CRACKED_END_STONE_BRICK_STAIRS = HELPER.createCompatBlock("lepton", "cracked_end_stone_brick_stairs", () -> new AbnormalsStairsBlock(CRACKED_END_STONE_BRICKS.get().getDefaultState(), Block.Properties.from(Blocks.END_STONE_BRICKS)), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> CRACKED_END_STONE_BRICK_WALL = HELPER.createCompatBlock("lepton", "cracked_end_stone_brick_wall", () -> new WallBlock(Block.Properties.from(Blocks.END_STONE_BRICKS)), ItemGroup.DECORATIONS);
-	public static final RegistryObject<Block> CRACKED_END_STONE_BRICK_VERTICAL_SLAB = HELPER.createCompatBlock("lepton", "cracked_end_stone_brick_vertical_slab", () -> new VerticalSlabBlock(Block.Properties.from(Blocks.END_STONE_BRICKS)), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> CRACKED_END_STONE_BRICK_VERTICAL_SLAB = HELPER.createTwoCompatBlock("lepton", "quark", "cracked_end_stone_brick_vertical_slab", () -> new VerticalSlabBlock(Block.Properties.from(Blocks.END_STONE_BRICKS)), ItemGroup.BUILDING_BLOCKS);
 	
 	public static final RegistryObject<Block> CHORUSY_END_STONE_BRICKS = HELPER.createBlock("chorusy_end_stone_bricks", () -> new Block(Block.Properties.from(Blocks.END_STONE_BRICKS)), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> CHISELED_POLISHED_END_STONE = HELPER.createBlock("chiseled_polished_end_stone", () -> new Block(Block.Properties.from(Blocks.END_STONE)), ItemGroup.BUILDING_BLOCKS);

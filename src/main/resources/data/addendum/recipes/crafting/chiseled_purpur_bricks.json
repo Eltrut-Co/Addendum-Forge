@@ -6,11 +6,10 @@
   ],
   "key": {
     "#": {
-      "item": "addendum:purpur_bricks"
+      "item": "addendum:purpur_brick_slab"
     }
   },
   "result": {
-    "item": "addendum:chiseled_purpur_block",
-	"count": 2
+    "item": "addendum:chiseled_purpur_bricks"
   }
 }
