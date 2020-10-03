@@ -2,7 +2,6 @@ package eltrut.addendum.core;
 
 import com.teamabnormals.abnormals_core.common.blocks.AbnormalsStairsBlock;
 import com.teamabnormals.abnormals_core.common.blocks.VerticalSlabBlock;
-import com.teamabnormals.abnormals_core.core.utils.RegistryHelper;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -57,7 +56,6 @@ public class BlockInit {
 	public static final RegistryObject<Block> POPPED_CHORUS_FRUIT_BLOCK = HELPER.createBlock("popped_chorus_fruit_block", () -> new Block(Block.Properties.from(Blocks.MAGENTA_WOOL)), ItemGroup.DECORATIONS);
 	
 	// Midori
-	// retexture midori bricks etc. to fit with Quark palette
 	public static final RegistryObject<Block> MIDORI_BRICKS = HELPER.createCompatBlock("quark", "midori_bricks", () -> new Block(Properties.MIDORI), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> MIDORI_BRICK_SLAB = HELPER.createCompatBlock("quark", "midori_brick_slab", () -> new SlabBlock(Properties.MIDORI), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> MIDORI_BRICK_STAIRS = HELPER.createCompatBlock("quark", "midori_brick_stairs", () -> new AbnormalsStairsBlock(MIDORI_BRICKS.get().getDefaultState(), Properties.MIDORI), ItemGroup.BUILDING_BLOCKS);

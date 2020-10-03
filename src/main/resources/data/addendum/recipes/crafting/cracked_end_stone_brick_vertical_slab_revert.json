@@ -9,14 +9,17 @@
     "item": "addendum:cracked_end_stone_brick_slab",
     "count": 1
   },
-  "conditions": [
-    {
-      "type": "forge:mod_loaded",
-      "modid": "lepton"
-    },
-    {
-      "type": "abnormals_core:quark_flag",
-      "modid": "vertical_slabs"
+  "conditions": {
+      "type": "forge:and",
+      "values": [
+		{
+			"type": "abnormals_core:quark_flag",
+			"flag": "vertical_slabs"
+		},
+        {
+			"type": "forge:mod_loaded",
+			"modid": "lepton"
+        }
+      ]
     }
-  ]
 }

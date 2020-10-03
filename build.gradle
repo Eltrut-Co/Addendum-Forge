@@ -77,6 +77,7 @@ dependencies {
     implementation fg.deobf("curse.maven:abnormals-core:3043251")
     implementation fg.deobf("curse.maven:autoreglib:3017289")
     implementation fg.deobf("curse.maven:quark:3061023")
+	implementation fg.deobf("curse.maven:lepton:3053733")
 
 }
 
