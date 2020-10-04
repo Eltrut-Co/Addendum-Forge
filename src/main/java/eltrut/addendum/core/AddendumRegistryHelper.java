@@ -19,7 +19,7 @@ public class AddendumRegistryHelper extends RegistryHelper {
 	
 	// credit to Epic312
 	public <B extends Block> RegistryObject<B> createTwoCompatBlock(String modId, String modId2, String name, Supplier<? extends B> supplier, @Nullable ItemGroup group) {
-        ItemGroup determinedGroup = (!ModList.get().isLoaded(modId) || !ModList.get().isLoaded(modId2)) && modId != "indev" ? null : group;
+		ItemGroup determinedGroup = (ModList.get().isLoaded(modId) || modId == "indev") && (ModList.get().isLoaded(modId2) || modId2 == "indev") ? group : null;
         return createBlock(name, supplier, determinedGroup);
     }
 	
