@@ -1,27 +1,23 @@
-package eltrut.addendum.core;
+package eltrut.addendum.core.registry;
 
 import com.teamabnormals.abnormals_core.common.blocks.AbnormalsStairsBlock;
 import com.teamabnormals.abnormals_core.common.blocks.VerticalSlabBlock;
 
+import eltrut.addendum.common.AddendumProperties;
+import eltrut.addendum.core.Addendum;
+import eltrut.addendum.core.registry.util.AddendumRegistryHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.WallBlock;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.ItemGroup;
-import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 
 @Mod.EventBusSubscriber(modid = Addendum.MOD_ID, bus = Bus.MOD)
-public class BlockInit {
+public class AddendumBlocks {
 	public static final AddendumRegistryHelper HELPER = Addendum.REGISTRY_HELPER;
-	
-	public static class Properties {
-		public static final Block.Properties MIDORI = Block.Properties.create(Material.ROCK, MaterialColor.LIME).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(1.5F, 6.0F);
-	}
 	
 	// End Stone
 	public static final RegistryObject<Block> END_STONE_SLAB = HELPER.createBlock("end_stone_slab", () -> new SlabBlock(Block.Properties.from(Blocks.END_STONE)), ItemGroup.BUILDING_BLOCKS);
@@ -56,13 +52,13 @@ public class BlockInit {
 	public static final RegistryObject<Block> POPPED_CHORUS_FRUIT_BLOCK = HELPER.createBlock("popped_chorus_fruit_block", () -> new Block(Block.Properties.from(Blocks.MAGENTA_WOOL)), ItemGroup.DECORATIONS);
 	
 	// Midori
-	public static final RegistryObject<Block> MIDORI_BRICKS = HELPER.createCompatBlock("quark", "midori_bricks", () -> new Block(Properties.MIDORI), ItemGroup.BUILDING_BLOCKS);
-	public static final RegistryObject<Block> MIDORI_BRICK_SLAB = HELPER.createCompatBlock("quark", "midori_brick_slab", () -> new SlabBlock(Properties.MIDORI), ItemGroup.BUILDING_BLOCKS);
-	public static final RegistryObject<Block> MIDORI_BRICK_STAIRS = HELPER.createCompatBlock("quark", "midori_brick_stairs", () -> new AbnormalsStairsBlock(MIDORI_BRICKS.get().getDefaultState(), Properties.MIDORI), ItemGroup.BUILDING_BLOCKS);
-	public static final RegistryObject<Block> MIDORI_BRICK_WALL = HELPER.createCompatBlock("quark", "midori_brick_wall", () -> new WallBlock(Properties.MIDORI), ItemGroup.DECORATIONS);
-	public static final RegistryObject<Block> MIDORI_BRICK_VERTICAL_SLAB = HELPER.createCompatBlock("quark", "midori_brick_vertical_slab", () -> new VerticalSlabBlock(Properties.MIDORI), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> MIDORI_BRICKS = HELPER.createCompatBlock("quark", "midori_bricks", () -> new Block(AddendumProperties.MIDORI), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> MIDORI_BRICK_SLAB = HELPER.createCompatBlock("quark", "midori_brick_slab", () -> new SlabBlock(AddendumProperties.MIDORI), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> MIDORI_BRICK_STAIRS = HELPER.createCompatBlock("quark", "midori_brick_stairs", () -> new AbnormalsStairsBlock(MIDORI_BRICKS.get().getDefaultState(), AddendumProperties.MIDORI), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> MIDORI_BRICK_WALL = HELPER.createCompatBlock("quark", "midori_brick_wall", () -> new WallBlock(AddendumProperties.MIDORI), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> MIDORI_BRICK_VERTICAL_SLAB = HELPER.createCompatBlock("quark", "midori_brick_vertical_slab", () -> new VerticalSlabBlock(AddendumProperties.MIDORI), ItemGroup.BUILDING_BLOCKS);
 	
-	public static final RegistryObject<Block> CHISELED_MIDORI_BRICKS = HELPER.createCompatBlock("quark", "chiseled_midori_bricks", () -> new Block(Properties.MIDORI), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> CHISELED_MIDORI_BRICKS = HELPER.createCompatBlock("quark", "chiseled_midori_bricks", () -> new Block(AddendumProperties.MIDORI), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> CACTUS_PASTE_BLOCK = HELPER.createCompatBlock("quark", "cactus_paste_block", () -> new Block(Block.Properties.from(Blocks.LIME_WOOL)), ItemGroup.DECORATIONS);
 	
 	// Shulker

@@ -3,8 +3,7 @@ package eltrut.addendum.core;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.teamabnormals.abnormals_core.core.utils.RegistryHelper;
-
+import eltrut.addendum.core.registry.util.AddendumRegistryHelper;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;

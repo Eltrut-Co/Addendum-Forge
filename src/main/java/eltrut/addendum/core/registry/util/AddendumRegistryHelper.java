@@ -1,4 +1,4 @@
-package eltrut.addendum.core;
+package eltrut.addendum.core.registry.util;
 
 import java.util.function.Supplier;
 
