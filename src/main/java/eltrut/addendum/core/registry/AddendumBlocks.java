@@ -63,7 +63,40 @@ public class AddendumBlocks {
 	public static final RegistryObject<Block> CACTUS_PASTE_BLOCK = HELPER.createCompatBlock(AddendumMods.QUARK, "cactus_paste_block", () -> new Block(Block.Properties.from(Blocks.LIME_WOOL)), ItemGroup.DECORATIONS);
 	
 	// Shulker
-	public static final RegistryObject<Block> SHULKER_BLOCK = HELPER.createBlock("shulker_block", () -> new Block(Block.Properties.from(Blocks.SHULKER_BOX)), ItemGroup.BUILDING_BLOCKS);
-	public static final RegistryObject<Block> SHULKER_SWIRL = HELPER.createBlock("shulker_swirl", () -> new Block(Block.Properties.from(Blocks.SHULKER_BOX)), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> SHULKER_BLOCK = HELPER.createBlock("shulker_block", () -> new Block(Block.Properties.from(Blocks.SHULKER_BOX)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> SHULKER_SWIRL = HELPER.createBlock("shulker_swirl", () -> new Block(Block.Properties.from(Blocks.SHULKER_BOX)), ItemGroup.DECORATIONS);
+	
+	public static final RegistryObject<Block> WHITE_SHULKER_BLOCK = HELPER.createBlock("white_shulker_block", () -> new Block(Block.Properties.from(Blocks.WHITE_SHULKER_BOX)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> WHITE_SHULKER_SWIRL = HELPER.createBlock("white_shulker_swirl", () -> new Block(Block.Properties.from(Blocks.WHITE_SHULKER_BOX)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> ORANGE_SHULKER_BLOCK = HELPER.createBlock("orange_shulker_block", () -> new Block(Block.Properties.from(Blocks.ORANGE_SHULKER_BOX)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> ORANGE_SHULKER_SWIRL = HELPER.createBlock("orange_shulker_swirl", () -> new Block(Block.Properties.from(Blocks.ORANGE_SHULKER_BOX)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> MAGENTA_SHULKER_BLOCK = HELPER.createBlock("magenta_shulker_block", () -> new Block(Block.Properties.from(Blocks.MAGENTA_SHULKER_BOX)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> MAGENTA_SHULKER_SWIRL = HELPER.createBlock("magenta_shulker_swirl", () -> new Block(Block.Properties.from(Blocks.MAGENTA_SHULKER_BOX)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> LIGHT_BLUE_SHULKER_BLOCK = HELPER.createBlock("light_blue_shulker_block", () -> new Block(Block.Properties.from(Blocks.LIGHT_BLUE_SHULKER_BOX)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> LIGHT_BLUE_SHULKER_SWIRL = HELPER.createBlock("light_blue_shulker_swirl", () -> new Block(Block.Properties.from(Blocks.LIGHT_BLUE_SHULKER_BOX)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> YELLOW_SHULKER_BLOCK = HELPER.createBlock("yellow_shulker_block", () -> new Block(Block.Properties.from(Blocks.YELLOW_SHULKER_BOX)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> YELLOW_SHULKER_SWIRL = HELPER.createBlock("yellow_shulker_swirl", () -> new Block(Block.Properties.from(Blocks.YELLOW_SHULKER_BOX)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> LIME_SHULKER_BLOCK = HELPER.createBlock("lime_shulker_block", () -> new Block(Block.Properties.from(Blocks.LIME_SHULKER_BOX)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> LIME_SHULKER_SWIRL = HELPER.createBlock("lime_shulker_swirl", () -> new Block(Block.Properties.from(Blocks.LIME_SHULKER_BOX)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> PINK_SHULKER_BLOCK = HELPER.createBlock("pink_shulker_block", () -> new Block(Block.Properties.from(Blocks.PINK_SHULKER_BOX)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> PINK_SHULKER_SWIRL = HELPER.createBlock("pink_shulker_swirl", () -> new Block(Block.Properties.from(Blocks.PINK_SHULKER_BOX)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> GRAY_SHULKER_BLOCK = HELPER.createBlock("gray_shulker_block", () -> new Block(Block.Properties.from(Blocks.GRAY_SHULKER_BOX)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> GRAY_SHULKER_SWIRL = HELPER.createBlock("gray_shulker_swirl", () -> new Block(Block.Properties.from(Blocks.GRAY_SHULKER_BOX)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> LIGHT_GRAY_SHULKER_BLOCK = HELPER.createBlock("light_gray_shulker_block", () -> new Block(Block.Properties.from(Blocks.LIGHT_GRAY_SHULKER_BOX)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> LIGHT_GRAY_SHULKER_SWIRL = HELPER.createBlock("light_gray_shulker_swirl", () -> new Block(Block.Properties.from(Blocks.LIGHT_GRAY_SHULKER_BOX)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> CYAN_SHULKER_BLOCK = HELPER.createBlock("cyan_shulker_block", () -> new Block(Block.Properties.from(Blocks.CYAN_SHULKER_BOX)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> CYAN_SHULKER_SWIRL = HELPER.createBlock("cyan_shulker_swirl", () -> new Block(Block.Properties.from(Blocks.CYAN_SHULKER_BOX)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> PURPLE_SHULKER_BLOCK = HELPER.createBlock("purple_shulker_block", () -> new Block(Block.Properties.from(Blocks.PURPLE_SHULKER_BOX)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> PURPLE_SHULKER_SWIRL = HELPER.createBlock("purple_shulker_swirl", () -> new Block(Block.Properties.from(Blocks.PURPLE_SHULKER_BOX)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> BLUE_SHULKER_BLOCK = HELPER.createBlock("blue_shulker_block", () -> new Block(Block.Properties.from(Blocks.BLUE_SHULKER_BOX)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> BLUE_SHULKER_SWIRL = HELPER.createBlock("blue_shulker_swirl", () -> new Block(Block.Properties.from(Blocks.BLUE_SHULKER_BOX)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> BROWN_SHULKER_BLOCK = HELPER.createBlock("brown_shulker_block", () -> new Block(Block.Properties.from(Blocks.BROWN_SHULKER_BOX)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> BROWN_SHULKER_SWIRL = HELPER.createBlock("brown_shulker_swirl", () -> new Block(Block.Properties.from(Blocks.BROWN_SHULKER_BOX)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> GREEN_SHULKER_BLOCK = HELPER.createBlock("green_shulker_block", () -> new Block(Block.Properties.from(Blocks.GREEN_SHULKER_BOX)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> GREEN_SHULKER_SWIRL = HELPER.createBlock("green_shulker_swirl", () -> new Block(Block.Properties.from(Blocks.GREEN_SHULKER_BOX)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> RED_SHULKER_BLOCK = HELPER.createBlock("red_shulker_block", () -> new Block(Block.Properties.from(Blocks.RED_SHULKER_BOX)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> RED_SHULKER_SWIRL = HELPER.createBlock("red_shulker_swirl", () -> new Block(Block.Properties.from(Blocks.RED_SHULKER_BOX)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> BLACK_SHULKER_BLOCK = HELPER.createBlock("black_shulker_block", () -> new Block(Block.Properties.from(Blocks.BLACK_SHULKER_BOX)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> BLACK_SHULKER_SWIRL = HELPER.createBlock("black_shulker_swirl", () -> new Block(Block.Properties.from(Blocks.BLACK_SHULKER_BOX)), ItemGroup.DECORATIONS);
 	
 }
