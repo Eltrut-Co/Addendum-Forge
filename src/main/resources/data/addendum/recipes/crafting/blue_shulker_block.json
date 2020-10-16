@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "shulker_block",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "addendum:shulker_block"
+    },
+    "X": {
+      "tag": "forge:dyes/blue"
+    }
+  },
+  "result": {
+    "item": "addendum:blue_shulker_block",
+    "count": 8
+  }
+}

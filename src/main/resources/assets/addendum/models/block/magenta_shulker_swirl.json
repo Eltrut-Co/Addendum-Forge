@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/cube_all",
+    "textures": {
+        "all": "addendum:block/magenta_shulker_swirl"
+    }
+}

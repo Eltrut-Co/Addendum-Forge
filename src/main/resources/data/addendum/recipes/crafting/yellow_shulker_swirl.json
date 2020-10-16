@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "shulker_swirl",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "addendum:shulker_swirl"
+    },
+    "X": {
+      "tag": "forge:dyes/yellow"
+    }
+  },
+  "result": {
+    "item": "addendum:yellow_shulker_swirl",
+    "count": 8
+  }
+}
