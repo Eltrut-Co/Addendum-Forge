@@ -5,7 +5,7 @@ import com.teamabnormals.abnormals_core.common.blocks.VerticalSlabBlock;
 
 import eltrut.addendum.common.AddendumProperties;
 import eltrut.addendum.core.Addendum;
-import eltrut.addendum.core.compat.AddendumMods;
+import eltrut.addendum.core.other.AddendumMods;
 import eltrut.addendum.core.registry.util.AddendumRegistryHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;

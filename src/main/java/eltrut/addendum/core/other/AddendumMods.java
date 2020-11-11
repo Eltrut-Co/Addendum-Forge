@@ -1,4 +1,4 @@
-package eltrut.addendum.core.compat;
+package eltrut.addendum.core.other;
 
 public class AddendumMods {
 	public static final String QUARK = "quark";
