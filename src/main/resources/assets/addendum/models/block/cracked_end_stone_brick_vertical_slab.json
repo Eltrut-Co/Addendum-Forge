@@ -1,8 +1,0 @@
-{
-    "parent": "abnormals_core:block/vertical_slab",
-    "textures": {
-        "bottom": "addendum:block/cracked_end_stone_bricks",
-        "top": "addendum:block/cracked_end_stone_bricks",
-        "side": "addendum:block/cracked_end_stone_bricks"
-    }
-}

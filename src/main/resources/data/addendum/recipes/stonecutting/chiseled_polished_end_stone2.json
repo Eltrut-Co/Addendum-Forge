@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "addendum:polished_end_stone"
-  },
-  "result": "addendum:chiseled_polished_end_stone",
-  "count": 1
-}
