@@ -1,8 +1,13 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "quark:midori_block"
-  },
+  "ingredient": [
+	{
+	  "item": "quark:midori_block"
+	},
+	{
+	  "item": "addendum:midori_bricks"
+	}
+  ],
   "result": "addendum:chiseled_midori_bricks",
   "count": 1,
   "conditions": [
