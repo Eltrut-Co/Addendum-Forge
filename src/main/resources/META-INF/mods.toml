@@ -1,8 +1,10 @@
 modLoader="javafml"
-loaderVersion="[31,)"
+loaderVersion="[35,)"
+license="GNU LGPL 2.1"
+issueTrackerURL="https://github.com/EltrutLikes/Addendum/issues"
 [[mods]]
 modId="addendum"
-version="0.1.0"
+version="1.2.0"
 displayName="Addendum"
 logoFile="examplemod.png"
 credits="Evtema3"
@@ -13,21 +15,21 @@ Adding new blocks to fit your ender palette!
 [[dependencies.addendum]]
     modId="forge"
     mandatory=true
-    versionRange="[32,)"
+    versionRange="[35,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.addendum]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.16.1]"
+    versionRange="[1.16.4]"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.addendum]]
     modId="abnormals_core"
     mandatory=true
-    versionRange="[2.0.1,)"
+    versionRange="[3.0.0,)"
     ordering="AFTER"
     side="BOTH"
     

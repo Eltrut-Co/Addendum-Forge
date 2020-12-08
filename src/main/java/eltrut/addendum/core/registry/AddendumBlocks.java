@@ -1,11 +1,11 @@
 package eltrut.addendum.core.registry;
 
-import com.teamabnormals.abnormals_core.common.blocks.AbnormalsStairsBlock;
-import com.teamabnormals.abnormals_core.common.blocks.VerticalSlabBlock;
+import com.minecraftabnormals.abnormals_core.common.blocks.AbnormalsStairsBlock;
+import com.minecraftabnormals.abnormals_core.common.blocks.VerticalSlabBlock;
+import com.minecraftabnormals.abnormals_core.core.util.registry.BlockSubRegistryHelper;
 
 import eltrut.addendum.core.Addendum;
 import eltrut.addendum.core.other.AddendumMods;
-import eltrut.addendum.core.registry.util.AddendumRegistryHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SlabBlock;
@@ -20,7 +20,7 @@ import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 
 @Mod.EventBusSubscriber(modid = Addendum.MOD_ID, bus = Bus.MOD)
 public class AddendumBlocks {
-	public static final AddendumRegistryHelper HELPER = Addendum.REGISTRY_HELPER;
+	public static final BlockSubRegistryHelper HELPER = Addendum.REGISTRY_HELPER.getBlockSubHelper();
 	
 	// End Stone
 	public static final RegistryObject<Block> END_STONE_SLAB = HELPER.createBlock("end_stone_slab", () -> new SlabBlock(Block.Properties.from(Blocks.END_STONE)), ItemGroup.BUILDING_BLOCKS);

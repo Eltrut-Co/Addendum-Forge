@@ -3,7 +3,8 @@ package eltrut.addendum.core;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import eltrut.addendum.core.registry.util.AddendumRegistryHelper;
+import com.minecraftabnormals.abnormals_core.core.util.registry.RegistryHelper;
+
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -18,7 +19,7 @@ public class Addendum
 {
     private static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "addendum";
-    public static final AddendumRegistryHelper REGISTRY_HELPER = new AddendumRegistryHelper(MOD_ID);
+    public static final RegistryHelper REGISTRY_HELPER = new RegistryHelper(MOD_ID);
     public static Addendum instance;
 
     IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -28,8 +29,7 @@ public class Addendum
         modEventBus.addListener(this::doClientStuff);
         instance = this;
         
-        REGISTRY_HELPER.getDeferredItemRegister().register(modEventBus);
-        REGISTRY_HELPER.getDeferredBlockRegister().register(modEventBus);
+        REGISTRY_HELPER.register(modEventBus);
         
         MinecraftForge.EVENT_BUS.register(this);
         
