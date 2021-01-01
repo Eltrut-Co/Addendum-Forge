@@ -71,9 +71,11 @@ minecraft {
 dependencies {
     minecraft "net.minecraftforge:forge:${project.mc_version}-${project.forge_version}"
     implementation fg.deobf("curse.maven:abnormals-core-382216:${ac_id}")
-    //implementation fg.deobf("curse.maven:autoreglib:3017289")
-    //implementation fg.deobf("curse.maven:quark:3061023")
-	//implementation fg.deobf("curse.maven:lepton:3053733")
+	implementation fg.deobf("curse.maven:lepton-407384:${lepton_id}")
+	implementation fg.deobf("curse.maven:endergetic-291509:${endergetic_id}")
+	
+    implementation fg.deobf("curse.maven:autoreglib-250363:${arl_id}")
+    implementation fg.deobf("curse.maven:quark-243121:${quark_id}")
 
 }
 
