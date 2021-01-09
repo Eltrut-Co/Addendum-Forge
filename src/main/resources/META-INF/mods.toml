@@ -1,17 +1,18 @@
 modLoader="javafml"
 loaderVersion="[34,)"
 license="GNU LGPL 2.1"
-issueTrackerURL="https://github.com/EltrutLikes/Addendum/issues"
+issueTrackerURL="https://github.com/Eltrut-Co/Addendum/issues"
 [[mods]]
 modId="addendum"
 version="1.2.1"
 displayName="Addendum"
-logoFile="examplemod.png"
-credits="Evtema3"
-authors="cleverpanda714, EltrutLikes"
+logoFile="addendum.png"
+credits="Evtema3, cleverpanda714, EltrutLikes"
+authors="Elrut & Co."
 description='''
 Adding new blocks to fit your ender palette!
 '''
+
 [[dependencies.addendum]]
     modId="forge"
     mandatory=true
@@ -32,4 +33,3 @@ Adding new blocks to fit your ender palette!
     versionRange="[3.0.0,)"
     ordering="AFTER"
     side="BOTH"
-    
