@@ -5,7 +5,6 @@ import com.minecraftabnormals.abnormals_core.common.blocks.VerticalSlabBlock;
 import com.minecraftabnormals.abnormals_core.core.util.registry.BlockSubRegistryHelper;
 
 import eltrut.addendum.core.Addendum;
-import eltrut.addendum.core.other.AddendumMods;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SlabBlock;
@@ -26,13 +25,13 @@ public class AddendumBlocks {
 	public static final RegistryObject<Block> END_STONE_SLAB = HELPER.createBlock("end_stone_slab", () -> new SlabBlock(Block.Properties.from(Blocks.END_STONE)), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> END_STONE_STAIRS = HELPER.createBlock("end_stone_stairs", () -> new AbnormalsStairsBlock(Blocks.END_STONE.getDefaultState(), Block.Properties.from(Blocks.END_STONE)), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> END_STONE_WALL = HELPER.createBlock("end_stone_wall", () -> new WallBlock(Block.Properties.from(Blocks.END_STONE)), ItemGroup.DECORATIONS);
-	public static final RegistryObject<Block> END_STONE_VERTICAL_SLAB = HELPER.createCompatBlock(AddendumMods.QUARK, "end_stone_vertical_slab", () -> new VerticalSlabBlock(Block.Properties.from(Blocks.END_STONE)), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> END_STONE_VERTICAL_SLAB = HELPER.createCompatBlock(Mods.QUARK, "end_stone_vertical_slab", () -> new VerticalSlabBlock(Block.Properties.from(Blocks.END_STONE)), ItemGroup.BUILDING_BLOCKS);
 	
 	public static final RegistryObject<Block> POLISHED_END_STONE = HELPER.createBlock("polished_end_stone", () -> new Block(Block.Properties.from(Blocks.END_STONE)), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> POLISHED_END_STONE_SLAB = HELPER.createBlock("polished_end_stone_slab", () -> new SlabBlock(Block.Properties.from(Blocks.END_STONE)), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> POLISHED_END_STONE_STAIRS = HELPER.createBlock("polished_end_stone_stairs", () -> new AbnormalsStairsBlock(POLISHED_END_STONE.get().getDefaultState(), Block.Properties.from(Blocks.END_STONE)), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> POLISHED_END_STONE_WALL = HELPER.createBlock("polished_end_stone_wall", () -> new WallBlock(Block.Properties.from(Blocks.END_STONE)), ItemGroup.DECORATIONS);
-	public static final RegistryObject<Block> POLISHED_END_STONE_VERTICAL_SLAB = HELPER.createCompatBlock(AddendumMods.QUARK, "polished_end_stone_vertical_slab", () -> new VerticalSlabBlock(Block.Properties.from(Blocks.END_STONE)), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> POLISHED_END_STONE_VERTICAL_SLAB = HELPER.createCompatBlock(Mods.QUARK, "polished_end_stone_vertical_slab", () -> new VerticalSlabBlock(Block.Properties.from(Blocks.END_STONE)), ItemGroup.BUILDING_BLOCKS);
 	
 	public static final RegistryObject<Block> CHORUSY_END_STONE_BRICKS = HELPER.createBlock("chorusy_end_stone_bricks", () -> new Block(Block.Properties.from(Blocks.END_STONE_BRICKS)), ItemGroup.BUILDING_BLOCKS);
 	
@@ -41,20 +40,30 @@ public class AddendumBlocks {
 	public static final RegistryObject<Block> PURPUR_BRICK_SLAB = HELPER.createBlock("purpur_brick_slab", () -> new SlabBlock(Block.Properties.from(Blocks.PURPUR_BLOCK)), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> PURPUR_BRICK_STAIRS = HELPER.createBlock("purpur_brick_stairs", () -> new AbnormalsStairsBlock(PURPUR_BRICKS.get().getDefaultState(), Block.Properties.from(Blocks.PURPUR_BLOCK)), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> PURPUR_BRICK_WALL = HELPER.createBlock("purpur_brick_wall", () -> new WallBlock(Block.Properties.from(Blocks.PURPUR_BLOCK)), ItemGroup.DECORATIONS);
-	public static final RegistryObject<Block> PURPUR_BRICK_VERTICAL_SLAB = HELPER.createCompatBlock(AddendumMods.QUARK, "purpur_brick_vertical_slab", () -> new VerticalSlabBlock(Block.Properties.from(Blocks.PURPUR_BLOCK)), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> PURPUR_BRICK_VERTICAL_SLAB = HELPER.createCompatBlock(Mods.QUARK, "purpur_brick_vertical_slab", () -> new VerticalSlabBlock(Block.Properties.from(Blocks.PURPUR_BLOCK)), ItemGroup.BUILDING_BLOCKS);
 	
 	public static final RegistryObject<Block> CHISELED_PURPUR_BRICKS = HELPER.createBlock("chiseled_purpur_bricks", () -> new Block(Block.Properties.from(Blocks.PURPUR_BLOCK)), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> POPPED_CHORUS_FRUIT_BLOCK = HELPER.createBlock("popped_chorus_fruit_block", () -> new Block(Block.Properties.from(Blocks.MAGENTA_WOOL)), ItemGroup.DECORATIONS);
 	
 	// Midori
-	public static final RegistryObject<Block> MIDORI_BRICKS = HELPER.createCompatBlock(AddendumMods.QUARK, "midori_bricks", () -> new Block(Properties.MIDORI), ItemGroup.BUILDING_BLOCKS);
-	public static final RegistryObject<Block> MIDORI_BRICK_SLAB = HELPER.createCompatBlock(AddendumMods.QUARK, "midori_brick_slab", () -> new SlabBlock(Properties.MIDORI), ItemGroup.BUILDING_BLOCKS);
-	public static final RegistryObject<Block> MIDORI_BRICK_STAIRS = HELPER.createCompatBlock(AddendumMods.QUARK, "midori_brick_stairs", () -> new AbnormalsStairsBlock(MIDORI_BRICKS.get().getDefaultState(), Properties.MIDORI), ItemGroup.BUILDING_BLOCKS);
-	public static final RegistryObject<Block> MIDORI_BRICK_WALL = HELPER.createCompatBlock(AddendumMods.QUARK, "midori_brick_wall", () -> new WallBlock(Properties.MIDORI), ItemGroup.DECORATIONS);
-	public static final RegistryObject<Block> MIDORI_BRICK_VERTICAL_SLAB = HELPER.createCompatBlock(AddendumMods.QUARK, "midori_brick_vertical_slab", () -> new VerticalSlabBlock(Properties.MIDORI), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> MIDORI_BRICKS = HELPER.createCompatBlock(Mods.QUARK, "midori_bricks", () -> new Block(Properties.MIDORI), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> MIDORI_BRICK_SLAB = HELPER.createCompatBlock(Mods.QUARK, "midori_brick_slab", () -> new SlabBlock(Properties.MIDORI), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> MIDORI_BRICK_STAIRS = HELPER.createCompatBlock(Mods.QUARK, "midori_brick_stairs", () -> new AbnormalsStairsBlock(MIDORI_BRICKS.get().getDefaultState(), Properties.MIDORI), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> MIDORI_BRICK_WALL = HELPER.createCompatBlock(Mods.QUARK, "midori_brick_wall", () -> new WallBlock(Properties.MIDORI), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> MIDORI_BRICK_VERTICAL_SLAB = HELPER.createCompatBlock(Mods.QUARK, "midori_brick_vertical_slab", () -> new VerticalSlabBlock(Properties.MIDORI), ItemGroup.BUILDING_BLOCKS);
 	
-	public static final RegistryObject<Block> CHISELED_MIDORI_BRICKS = HELPER.createCompatBlock(AddendumMods.QUARK, "chiseled_midori_bricks", () -> new Block(Properties.MIDORI), ItemGroup.BUILDING_BLOCKS);
-	public static final RegistryObject<Block> CACTUS_PASTE_BLOCK = HELPER.createCompatBlock(AddendumMods.QUARK, "cactus_paste_block", () -> new Block(Block.Properties.from(Blocks.LIME_WOOL)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> CHISELED_MIDORI_BRICKS = HELPER.createCompatBlock(Mods.QUARK, "chiseled_midori_bricks", () -> new Block(Properties.MIDORI), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> CACTUS_PASTE_BLOCK = HELPER.createCompatBlock(Mods.QUARK, "cactus_paste_block", () -> new Block(Block.Properties.from(Blocks.LIME_WOOL)), ItemGroup.DECORATIONS);
+	
+	// Himmel
+	public static final RegistryObject<Block> HIMMEL_BRICKS = HELPER.createCompatBlock(Mods.OUTER_END, "himmel_bricks", () -> new Block(Block.Properties.from(Blocks.PURPUR_BLOCK)), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> HIMMEL_BRICK_SLAB = HELPER.createCompatBlock(Mods.OUTER_END, "himmel_brick_slab", () -> new SlabBlock(Block.Properties.from(Blocks.PURPUR_BLOCK)), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> HIMMEL_BRICK_STAIRS = HELPER.createCompatBlock(Mods.OUTER_END, "himmel_brick_stairs", () -> new AbnormalsStairsBlock(HIMMEL_BRICKS.get().getDefaultState(), Block.Properties.from(Blocks.PURPUR_BLOCK)), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> HIMMEL_BRICK_WALL = HELPER.createCompatBlock(Mods.OUTER_END, "himmel_brick_wall", () -> new WallBlock(Block.Properties.from(Blocks.PURPUR_BLOCK)), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> HIMMEL_BRICK_VERTICAL_SLAB = HELPER.createCompatBlock("himmel_brick_vertical_slab", () -> new VerticalSlabBlock(Block.Properties.from(Blocks.PURPUR_BLOCK)), ItemGroup.BUILDING_BLOCKS, Mods.OUTER_END, Mods.QUARK);
+	
+	public static final RegistryObject<Block> CHISELED_HIMMEL_BRICKS = HELPER.createCompatBlock(Mods.OUTER_END, "chiseled_himmel_bricks", () -> new Block(Block.Properties.from(Blocks.PURPUR_BLOCK)), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> FLORAL_PASTE_BLOCK = HELPER.createCompatBlock(Mods.OUTER_END, "floral_paste_block", () -> new Block(Block.Properties.from(Blocks.CYAN_WOOL)), ItemGroup.DECORATIONS);
 	
 	// Shulker
 	public static final RegistryObject<Block> SHULKER_BLOCK = HELPER.createBlock("shulker_block", () -> new Block(Block.Properties.from(Blocks.SHULKER_BOX)), ItemGroup.DECORATIONS);
@@ -95,6 +104,11 @@ public class AddendumBlocks {
 	
 	public static class Properties {
 		public static final Block.Properties MIDORI = Block.Properties.create(Material.ROCK, MaterialColor.LIME).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(1.5F, 6.0F);
+	}
+	
+	public static class Mods {
+		public static final String QUARK = "quark";
+		public static final String OUTER_END = "outer_end";
 	}
 	
 }
