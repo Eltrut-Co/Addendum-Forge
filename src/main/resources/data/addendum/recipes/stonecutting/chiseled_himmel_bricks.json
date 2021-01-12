@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": [
+	{
+	  "item": "outer_end:himmel_block"
+	},
+	{
+	  "item": "addendum:midori_bricks"
+	}
+  ],
+  "result": "addendum:chiseled_himmel_bricks",
+  "count": 1,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "outer_end"
+    }
+  ]
+}
