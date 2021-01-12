@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "outer_end:himmel_block"
+    }
+  },
+  "result": {
+    "item": "addendum:himmel_bricks",
+    "count": 4
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "outer_end"
+    }
+  ]
+}

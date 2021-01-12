@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "outer_end:floral_paste"
+    }
+  },
+  "result": {
+    "item": "addendum:floral_paste_block"
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "outer_end"
+    }
+  ]
+}

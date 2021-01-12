@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": [
+	{
+	  "item": "outer_end:himmel_block"
+	},
+	{
+	  "item": "addendum:himmel_bricks"
+	}
+  ],
+  "result": "addendum:himmel_brick_vertical_slab",
+  "count": 2,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "outer_end"
+    },
+    {
+      "type": "abnormals_core:quark_flag",
+      "flag": "vertical_slabs"
+    }
+  ]
+}
