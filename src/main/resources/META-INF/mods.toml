@@ -4,7 +4,7 @@ license="GNU LGPL 2.1"
 issueTrackerURL="https://github.com/Eltrut-Co/Addendum/issues"
 [[mods]]
 modId="addendum"
-version="1.2.1"
+version="1.2.2"
 displayName="Addendum"
 logoFile="addendum.png"
 credits="Evtema3, cleverpanda714, EltrutLikes"
