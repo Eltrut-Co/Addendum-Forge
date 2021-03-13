@@ -1,5 +1,5 @@
 {
-    "parent": "abnormals_core:block/vertical_slab",
+    "parent": "differentiate:block/vertical_slab",
     "textures": {
         "bottom": "addendum:block/himmel_bricks",
         "top": "addendum:block/himmel_bricks",
