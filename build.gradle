@@ -30,7 +30,7 @@ minecraft {
 			jvmArg "-Dmixin.env.disableRefMap=true"
 
             mods {
-                examplemod {
+                addendum {
                     source sourceSets.main
                 }
             }
@@ -44,7 +44,7 @@ minecraft {
 			jvmArg "-Dmixin.env.disableRefMap=true"
 
             mods {
-                examplemod {
+                addendum {
                     source sourceSets.main
                 }
             }
@@ -54,13 +54,12 @@ minecraft {
             workingDirectory project.file('run')
 
             property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
-
             property 'forge.logging.console.level', 'debug'
-
-            args '--mod', 'examplemod', '--all', '--output', file('src/generated/resources/')
+			jvmArg "-Dmixin.env.disableRefMap=true"
+            args '--mod', 'addendum', '--all', '--output', file('src/generated/resources/')
 
             mods {
-                examplemod {
+                addendum {
                     source sourceSets.main
                 }
             }
@@ -70,11 +69,14 @@ minecraft {
 
 dependencies {
     minecraft "net.minecraftforge:forge:${project.mc_version}-${project.forge_version}"
-    implementation fg.deobf("curse.maven:abnormals-core-382216:${ac_id}")
-	implementation fg.deobf("curse.maven:outer-end-430404:${outerend_id}")
+	implementation fg.deobf("curse.maven:differentiate-450748:${differentiate_id}")
+    //implementation fg.deobf("curse.maven:abnormals-core-382216:${ac_id}")
+	//implementation fg.deobf("curse.maven:environmental-388992:${environmental_id}")
 	
-    implementation fg.deobf("curse.maven:autoreglib-250363:${arl_id}")
-    implementation fg.deobf("curse.maven:quark-243121:${quark_id}")
+	//implementation fg.deobf("curse.maven:outer-end-430404:${outerend_id}")
+	
+    //implementation fg.deobf("curse.maven:autoreglib-250363:${arl_id}")
+    //implementation fg.deobf("curse.maven:quark-243121:${quark_id}")
 
 }
 

@@ -4,7 +4,7 @@ license="GNU LGPL 2.1"
 issueTrackerURL="https://github.com/Eltrut-Co/Addendum/issues"
 [[mods]]
 modId="addendum"
-version="1.2.3"
+version="1.3.0"
 displayName="Addendum"
 logoFile="addendum.png"
 credits="Evtema3, cleverpanda714, EltrutLikes"
@@ -28,8 +28,8 @@ Adding new blocks to fit your ender palette!
     side="BOTH"
 
 [[dependencies.addendum]]
-    modId="abnormals_core"
+    modId="differentiate"
     mandatory=true
-    versionRange="[3.0.0,)"
+    versionRange="[0.3.2,)"
     ordering="AFTER"
     side="BOTH"
