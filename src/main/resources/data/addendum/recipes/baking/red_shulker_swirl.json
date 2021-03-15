@@ -5,7 +5,7 @@
   },
   "result": "addendum:red_shulker_swirl",
   "experience": 0.1,
-  "cookingtime": 200,
+  "cookingtime": 100,
   "conditions": [
     {
       "type": "forge:mod_loaded",
