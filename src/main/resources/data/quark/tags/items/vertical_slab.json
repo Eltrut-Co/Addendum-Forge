@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "addendum:end_stone_vertical_slab",
+	"addendum:polished_end_stone_vertical_slab",
+	"addendum:purpur_brick_vertical_slab",
+	"addendum:midori_brick_vertical_slab",
+	"addendum:himmel_brick_vertical_slab"
+  ]
+}
