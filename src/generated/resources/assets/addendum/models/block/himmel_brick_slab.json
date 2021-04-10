@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "side": "addendum:block/himmel_bricks",
+    "bottom": "addendum:block/himmel_bricks",
+    "top": "addendum:block/himmel_bricks"
+  }
+}

@@ -3,13 +3,17 @@ package co.eltrut.addendum.core;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import co.eltrut.addendum.core.data.AddendumBlockModels;
 import co.eltrut.differentiate.core.registrator.Registrator;
+import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod("addendum")
@@ -25,16 +29,22 @@ public class Addendum {
     public Addendum() {
         modEventBus.addListener(this::doCommonStuff);
         modEventBus.addListener(this::doClientStuff);
+        modEventBus.addListener(this::doDataStuff);
         instance = this;
         
         MinecraftForge.EVENT_BUS.register(this);
         
     }
 
-    private void doCommonStuff(final FMLCommonSetupEvent event)
-    {
+    private void doCommonStuff(final FMLCommonSetupEvent event) {
     }
     
     private void doClientStuff(final FMLClientSetupEvent event) {
+    }
+    
+    private void doDataStuff(final GatherDataEvent event) {
+    	DataGenerator generator = event.getGenerator();
+    	ExistingFileHelper helper = event.getExistingFileHelper();
+    	generator.addProvider(new AddendumBlockModels(generator, helper));
     }
 }
