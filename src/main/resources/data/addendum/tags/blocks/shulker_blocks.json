@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "addendum:shulker_block",
+    "addendum:white_shulker_block",
+    "addendum:orange_shulker_block",
+    "addendum:magenta_shulker_block",
+    "addendum:light_blue_shulker_block",
+    "addendum:yellow_shulker_block",
+    "addendum:lime_shulker_block",
+    "addendum:pink_shulker_block",
+    "addendum:gray_shulker_block",
+    "addendum:light_gray_shulker_block",
+    "addendum:cyan_shulker_block",
+    "addendum:purple_shulker_block",
+    "addendum:blue_shulker_block",
+    "addendum:brown_shulker_block",
+    "addendum:green_shulker_block",
+    "addendum:red_shulker_block",
+    "addendum:black_shulker_block"
+  ]
+}

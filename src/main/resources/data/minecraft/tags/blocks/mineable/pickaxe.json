@@ -1,0 +1,32 @@
+{
+  "replace": false,
+  "values": [
+	"addendum:end_stone_slab",
+	"addendum:end_stone_stairs",
+	"addendum:end_stone_wall",
+	"addendum:end_stone_vertical_slab",
+	"addendum:polished_end_stone",
+	"addendum:polished_end_stone_slab",
+	"addendum:polished_end_stone_stairs",
+	"addendum:polished_end_stone_wall",
+	"addendum:polished_end_stone_vertical_slab",
+	"addendum:chorusy_end_stone_bricks",
+	"addendum:purpur_bricks",
+	"addendum:purpur_brick_slab",
+	"addendum:purpur_brick_stairs",
+	"addendum:purpur_brick_wall",
+	"addendum:purpur_brick_vertical_slab",
+	"#addendum:shulker_blocks",
+	"#addendum:shulker_swirls",
+	"addendum:midori_bricks",
+	"addendum:midori_brick_slab",
+	"addendum:midori_brick_stairs",
+	"addendum:midori_brick_wall",
+	"addendum:midori_brick_vertical_slab",
+	"addendum:himmel_bricks",
+	"addendum:himmel_brick_slab",
+	"addendum:himmel_brick_stairs",
+	"addendum:himmel_brick_wall",
+	"addendum:himmel_brick_vertical_slab"
+  ]
+}

@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "addendum:cactus_paste_block"
+          "name": "addendum:moss_paste_block"
         }
       ],
       "conditions": [
