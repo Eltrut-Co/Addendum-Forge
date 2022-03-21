@@ -7,11 +7,11 @@
   ],
   "key": {
     "#": {
-      "item": "quark:cactus_paste"
+      "item": "quark:moss_paste"
     }
   },
   "result": {
-    "item": "addendum:cactus_paste_block"
+    "item": "addendum:moss_paste_block"
   },
   "conditions": [
     {

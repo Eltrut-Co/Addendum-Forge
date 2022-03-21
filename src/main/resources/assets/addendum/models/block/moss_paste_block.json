@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:block/cube_all",
     "textures": {
-        "all": "addendum:block/cactus_paste_block"
+        "all": "addendum:block/moss_paste_block"
     }
 }
