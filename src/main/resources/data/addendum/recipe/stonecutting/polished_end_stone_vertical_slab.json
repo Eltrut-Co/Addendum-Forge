@@ -1,19 +1,25 @@
 {
-  "type": "minecraft:stonecutting",
-  "ingredient": [
-	{
-	  "item": "minecraft:end_stone"
-	},
-	{
-	  "item": "addendum:polished_end_stone"
-	}
-  ],
-  "result": "addendum:polished_end_stone_vertical_slab",
-  "count": 2,
-  "conditions": [
+  "neoforge:conditions": [
     {
-      "type": "differentiate:flag",
+      "type": "neoforge:mod_loaded",
+      "modid": "quark"
+    },
+    {
+      "type": "zeta:flag",
       "flag": "vertical_slabs"
     }
-  ]
+  ],
+  "type": "minecraft:stonecutting",
+  "ingredient": [
+    {
+      "item": "minecraft:end_stone"
+    },
+    {
+      "item": "addendum:polished_end_stone"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "addendum:polished_end_stone_vertical_slab"
+  }
 }

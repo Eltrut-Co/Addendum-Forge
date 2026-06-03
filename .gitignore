@@ -26,3 +26,5 @@ logs
 
 # Files from Forge MDK
 forge*changelog.txt
+/libs
+/src/generated/resources/.cache

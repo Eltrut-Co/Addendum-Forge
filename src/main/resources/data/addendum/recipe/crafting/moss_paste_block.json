@@ -13,9 +13,13 @@
   "result": {
     "id": "addendum:moss_paste_block"
   },
-  "conditions": [
+  "neoforge:conditions": [
     {
-      "type": "differentiate:flag",
+      "type": "neoforge:mod_loaded",
+      "modid": "quark"
+    },
+    {
+      "type": "zeta:flag",
       "flag": "midori"
     }
   ]

@@ -9,19 +9,18 @@
     "id": "addendum:midori_brick_slab",
     "count": 1
   },
-  "conditions": [
-	{
-      "type": "forge:and",
-      "values": [
-		{
-			"type": "differentiate:flag",
-			"flag": "vertical_slabs"
-		},
-        {
-			"type": "differentiate:flag",
-			"flag": "midori"
-        }
-      ]
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "quark"
+    },
+    {
+      "type": "zeta:flag",
+      "flag": "midori"
+    },
+    {
+      "type": "zeta:flag",
+      "flag": "vertical_slabs"
     }
   ]
 }

@@ -10,16 +10,11 @@
     }
   ],
   "type": "minecraft:stonecutting",
-  "ingredient": [
-    {
-      "item": "minecraft:purpur_block"
-    },
-    {
-      "item": "addendum:purpur_bricks"
-    }
-  ],
+  "ingredient": {
+    "item": "addendum:chorusy_end_stone_bricks"
+  },
   "result": {
     "count": 2,
-    "id": "addendum:purpur_brick_vertical_slab"
+    "id": "addendum:chorusy_end_stone_brick_vertical_slab"
   }
 }

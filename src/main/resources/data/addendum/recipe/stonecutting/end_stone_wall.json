@@ -3,6 +3,8 @@
   "ingredient": {
     "item": "minecraft:end_stone"
   },
-  "result": "addendum:end_stone_wall",
-  "count": 1
+  "result": {
+    "count": 1,
+    "id": "addendum:end_stone_wall"
+  }
 }

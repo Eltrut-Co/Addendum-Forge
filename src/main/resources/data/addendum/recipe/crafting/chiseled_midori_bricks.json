@@ -12,9 +12,13 @@
   "result": {
     "id": "addendum:chiseled_midori_bricks"
   },
-  "conditions": [
+  "neoforge:conditions": [
     {
-      "type": "differentiate:flag",
+      "type": "neoforge:mod_loaded",
+      "modid": "quark"
+    },
+    {
+      "type": "zeta:flag",
       "flag": "midori"
     }
   ]

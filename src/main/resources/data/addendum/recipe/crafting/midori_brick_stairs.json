@@ -14,9 +14,13 @@
     "id": "addendum:midori_brick_stairs",
     "count": 4
   },
-  "conditions": [
+  "neoforge:conditions": [
     {
-      "type": "differentiate:flag",
+      "type": "neoforge:mod_loaded",
+      "modid": "quark"
+    },
+    {
+      "type": "zeta:flag",
       "flag": "midori"
     }
   ]
