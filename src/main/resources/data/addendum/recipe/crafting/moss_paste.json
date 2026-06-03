@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "addendum:moss_paste_block"
+    }
+  ],
+  "result": {
+    "id": "quark:moss_paste",
+    "count": 9
+  },
+  "conditions": [
+    {
+      "type": "differentiate:flag",
+      "flag": "midori"
+    }
+  ]
+}

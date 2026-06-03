@@ -4,6 +4,8 @@ import co.eltrut.addendum.core.Addendum;
 import co.eltrut.differentiate.common.repo.VariantBlocksRepo;
 import co.eltrut.differentiate.core.event.LoadEvent;
 import co.eltrut.differentiate.core.registrator.BlockHelper;
+import co.eltrut.differentiate.core.util.BlockUtil;
+import co.eltrut.differentiate.core.util.CompatUtil;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Block;
@@ -27,7 +29,7 @@ public class AddendumBlocks {
 
 	public static final VariantBlocksRepo PURPUR_BRICKS = HELPER.createFollowBlockWithVariants("purpur_bricks", BlockBehaviour.Properties.ofFullCopy(Blocks.PURPUR_BLOCK), CreativeModeTabs.BUILDING_BLOCKS, Blocks.PURPUR_BLOCK, Blocks.PURPUR_SLAB);
 	public static final DeferredBlock<Block> CHISELED_PURPUR_BRICKS = HELPER.createFollowBlock("chiseled_purpur_bricks", () -> new Block(Block.Properties.ofFullCopy(Blocks.PURPUR_BLOCK)), CreativeModeTabs.BUILDING_BLOCKS, Addendum.MOD_ID, "purpur_brick_wall");
-	public static final DeferredBlock<Block> POPPED_CHORUS_FRUIT_BLOCK = HELPER.createFollowBlock("popped_chorus_fruit_block", () -> new Block(Block.Properties.ofFullCopy(Blocks.MAGENTA_WOOL)), CreativeModeTabs.NATURAL_BLOCKS, Addendum.MOD_ID, "chiseled_purpur_bricks");
+	public static final DeferredBlock<Block> POPPED_CHORUS_FRUIT_BLOCK = HELPER.createBlock("popped_chorus_fruit_block", () -> new Block(Block.Properties.ofFullCopy(Blocks.MAGENTA_WOOL)), CreativeModeTabs.NATURAL_BLOCKS);
 
 	public static final DeferredBlock<Block> SHULKER_BLOCK = HELPER.createBlock("shulker_block", () -> new Block(Block.Properties.ofFullCopy(Blocks.SHULKER_BOX)), CreativeModeTabs.BUILDING_BLOCKS);
 	public static final DeferredBlock<Block> SHULKER_SWIRL = HELPER.createBlock("shulker_swirl", () -> new Block(Block.Properties.ofFullCopy(Blocks.SHULKER_BOX)), CreativeModeTabs.BUILDING_BLOCKS);
@@ -67,8 +69,8 @@ public class AddendumBlocks {
 	public static final DeferredBlock<Block> BLACK_SHULKER_SWIRL = HELPER.createBlock("black_shulker_swirl", () -> new Block(Block.Properties.ofFullCopy(Blocks.BLACK_SHULKER_BOX)), CreativeModeTabs.COLORED_BLOCKS);
 
 	// Compat
-//	public static final VariantBlocksRepo MIDORI_BRICKS = HELPER.createBlockWithVariants("midori_bricks", BlockUtil.QuarkProperties.MIDORI, CreativeModeTab.TAB_BUILDING_BLOCKS, Mods.QUARK);
-//	public static final DeferredBlock<Block> CHISELED_MIDORI_BRICKS = HELPER.createBlock("chiseled_midori_bricks", () -> new Block(BlockUtil.QuarkProperties.MIDORI), CreativeModeTab.TAB_BUILDING_BLOCKS, Mods.QUARK);
-//	public static final DeferredBlock<Block> MOSS_PASTE_BLOCK = HELPER.createBlock("moss_paste_block", () -> new Block(Block.Properties.ofFullCopy(Blocks.LIME_WOOL)), CreativeModeTabs.COLORED_BLOCKS, Mods.QUARK);
-//	
+	public static final VariantBlocksRepo MIDORI_BRICKS = HELPER.createBlockWithVariants("midori_bricks", BlockUtil.QuarkProperties.MIDORI, CreativeModeTabs.BUILDING_BLOCKS, Blocks.PURPUR_BLOCK, CompatUtil.Mods.QUARK);
+	public static final DeferredBlock<Block> CHISELED_MIDORI_BRICKS = HELPER.createBlock("chiseled_midori_bricks", () -> new Block(BlockUtil.QuarkProperties.MIDORI), CreativeModeTabs.BUILDING_BLOCKS, CompatUtil.Mods.QUARK);
+	public static final DeferredBlock<Block> MOSS_PASTE_BLOCK = HELPER.createBlock("moss_paste_block", () -> new Block(Block.Properties.ofFullCopy(Blocks.LIME_WOOL)), CreativeModeTabs.COLORED_BLOCKS, CompatUtil.Mods.QUARK);
+
 }

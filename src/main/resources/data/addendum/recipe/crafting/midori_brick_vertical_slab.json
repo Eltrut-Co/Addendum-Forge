@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "addendum:midori_brick_slab"
+    }
+  },
+  "result": {
+    "id": "addendum:midori_brick_vertical_slab",
+    "count": 3
+  },
+  "conditions": [
+	{
+      "type": "forge:and",
+      "values": [
+		{
+			"type": "differentiate:flag",
+			"flag": "vertical_slabs"
+		},
+        {
+			"type": "differentiate:flag",
+			"flag": "midori"
+        }
+      ]
+    }
+  ]
+}

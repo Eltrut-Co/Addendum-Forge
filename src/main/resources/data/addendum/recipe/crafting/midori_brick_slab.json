@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "addendum:midori_bricks"
+    }
+  },
+  "result": {
+    "id": "addendum:midori_brick_slab",
+    "count": 6
+  },
+  "conditions": [
+    {
+      "type": "differentiate:flag",
+      "flag": "midori"
+    }
+  ]
+}

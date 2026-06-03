@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "addendum:chorusy_end_stone_bricks"
+    }
+  },
+  "result": {
+    "id": "addendum:chorusy_end_stone_brick_stairs",
+    "count": 4
+  }
+}

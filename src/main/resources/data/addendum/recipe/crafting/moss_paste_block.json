@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "quark:moss_paste"
+    }
+  },
+  "result": {
+    "id": "addendum:moss_paste_block"
+  },
+  "conditions": [
+    {
+      "type": "differentiate:flag",
+      "flag": "midori"
+    }
+  ]
+}
