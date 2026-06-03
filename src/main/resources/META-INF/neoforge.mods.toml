@@ -1,0 +1,35 @@
+modLoader="javafml"
+loaderVersion="[2,)"
+license="GNU LGPL 2.1"
+issueTrackerURL="https://github.com/Eltrut-Co/Addendum/issues"
+[[mods]]
+modId="addendum"
+version="3.0.0"
+displayName="Addendum"
+logoFile="addendum.png"
+credits="Evtema3, cleverpanda714, EltrutLikes"
+authors="Eltrut & Co."
+description='''
+Adding new blocks to fit your ender palette!
+'''
+
+[[dependencies.addendum]]
+modId="neoforge"
+mandatory=true
+versionRange="[2,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.addendum]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.21.1]"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.addendum]]
+modId="differentiate"
+mandatory=true
+versionRange="[3.1.0,)"
+ordering="AFTER"
+side="BOTH"

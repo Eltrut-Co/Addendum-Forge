@@ -1,8 +1,0 @@
-{
-    "parent": "differentiate:block/vertical_slab",
-    "textures": {
-        "bottom": "addendum:block/himmel_bricks",
-        "top": "addendum:block/himmel_bricks",
-        "side": "addendum:block/himmel_bricks"
-    }
-}

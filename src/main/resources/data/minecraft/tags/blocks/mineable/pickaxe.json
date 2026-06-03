@@ -22,11 +22,6 @@
 	"addendum:midori_brick_slab",
 	"addendum:midori_brick_stairs",
 	"addendum:midori_brick_wall",
-	"addendum:midori_brick_vertical_slab",
-	"addendum:himmel_bricks",
-	"addendum:himmel_brick_slab",
-	"addendum:himmel_brick_stairs",
-	"addendum:himmel_brick_wall",
-	"addendum:himmel_brick_vertical_slab"
+	"addendum:midori_brick_vertical_slab"
   ]
 }
