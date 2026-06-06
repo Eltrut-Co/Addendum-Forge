@@ -10,7 +10,11 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.ButtonBlock;
+import net.minecraft.world.level.block.PressurePlateBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -72,5 +76,15 @@ public class AddendumBlocks {
 	public static final VariantBlocksRepo MIDORI_BRICKS = HELPER.createBlockWithVariants("midori_bricks", BlockUtil.QuarkProperties.MIDORI, CreativeModeTabs.BUILDING_BLOCKS, Blocks.PURPUR_BLOCK, CompatUtil.Mods.QUARK);
 	public static final DeferredBlock<Block> CHISELED_MIDORI_BRICKS = HELPER.createBlock("chiseled_midori_bricks", () -> new Block(BlockUtil.QuarkProperties.MIDORI), CreativeModeTabs.BUILDING_BLOCKS, CompatUtil.Mods.QUARK);
 	public static final DeferredBlock<Block> MOSS_PASTE_BLOCK = HELPER.createBlock("moss_paste_block", () -> new Block(Block.Properties.ofFullCopy(Blocks.LIME_WOOL)), CreativeModeTabs.COLORED_BLOCKS, CompatUtil.Mods.QUARK);
+
+	public static final DeferredBlock<Block> POLISHED_END_STONE_PRESSURE_PLATE = HELPER.createFollowBlock("polished_end_stone_pressure_plate", () -> new PressurePlateBlock(BlockSetType.STONE, BlockBehaviour.Properties.ofFullCopy(Blocks.END_STONE)
+			.forceSolidOn()
+			.noCollission()
+			.strength(0.5F)
+			.pushReaction(PushReaction.DESTROY)), CreativeModeTabs.BUILDING_BLOCKS, POLISHED_END_STONE.getWallBlock(), CompatUtil.Mods.LEPTON);
+	public static final DeferredBlock<Block> POLISHED_END_STONE_BUTTON = HELPER.createFollowBlock("polished_end_stone_button", () -> new ButtonBlock(BlockSetType.STONE, 20, BlockBehaviour.Properties.ofFullCopy(Blocks.END_STONE)
+			.noCollission()
+			.strength(0.5F)
+			.pushReaction(PushReaction.DESTROY)), CreativeModeTabs.BUILDING_BLOCKS, POLISHED_END_STONE.getWallBlock(), CompatUtil.Mods.LEPTON);
 
 }

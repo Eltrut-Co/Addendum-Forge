@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "addendum:polished_end_stone"
+    }
+  },
+  "result": {
+    "id": "addendum:polished_end_stone_pressure_plate"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "lepton"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "addendum:polished_end_stone"
+    }
+  ],
+  "result": {
+    "id": "addendum:polished_end_stone_button"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "lepton"
+    }
+  ]
+}
