@@ -1,5 +1,7 @@
 package co.eltrut.addendum.core.registry;
 
+import co.eltrut.addendum.common.block.DragonCampfireBlock;
+import co.eltrut.addendum.common.block.DragonFireBlock;
 import co.eltrut.addendum.core.Addendum;
 import co.eltrut.differentiate.common.repo.VariantBlocksRepo;
 import co.eltrut.differentiate.core.event.LoadEvent;
@@ -8,16 +10,20 @@ import co.eltrut.differentiate.core.util.BlockUtil;
 import co.eltrut.differentiate.core.util.CompatUtil;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.ButtonBlock;
-import net.minecraft.world.level.block.PressurePlateBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredHolder;
+
+import java.util.function.ToIntFunction;
 
 @EventBusSubscriber(modid = Addendum.MOD_ID)
 public class AddendumBlocks {
@@ -72,6 +78,9 @@ public class AddendumBlocks {
 	public static final DeferredBlock<Block> RED_SHULKER_SWIRL = HELPER.createBlock("red_shulker_swirl", () -> new Block(Block.Properties.ofFullCopy(Blocks.RED_SHULKER_BOX)), CreativeModeTabs.COLORED_BLOCKS);
 	public static final DeferredBlock<Block> BLACK_SHULKER_SWIRL = HELPER.createBlock("black_shulker_swirl", () -> new Block(Block.Properties.ofFullCopy(Blocks.BLACK_SHULKER_BOX)), CreativeModeTabs.COLORED_BLOCKS);
 
+	public static final DeferredHolder<Block, Block> DRAGON_FIRE = HELPER.getDeferredRegister().register("dragon_fire", () -> new DragonFireBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).replaceable().noCollission().instabreak().lightLevel(state -> 10).sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
+	public static final DeferredBlock<Block> DRAGON_CAMPFIRE = HELPER.createBlock("dragon_campfire", () -> new DragonCampfireBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PODZOL).instrument(NoteBlockInstrument.BASS).strength(2.0F).sound(SoundType.WOOD).lightLevel(litBlockEmission()).noOcclusion().ignitedByLava()), CreativeModeTabs.FUNCTIONAL_BLOCKS);
+
 	// Compat
 	public static final VariantBlocksRepo MIDORI_BRICKS = HELPER.createBlockWithVariants("midori_bricks", BlockUtil.QuarkProperties.MIDORI, CreativeModeTabs.BUILDING_BLOCKS, Blocks.PURPUR_BLOCK, CompatUtil.Mods.QUARK);
 	public static final DeferredBlock<Block> CHISELED_MIDORI_BRICKS = HELPER.createBlock("chiseled_midori_bricks", () -> new Block(BlockUtil.QuarkProperties.MIDORI), CreativeModeTabs.BUILDING_BLOCKS, CompatUtil.Mods.QUARK);
@@ -86,5 +95,9 @@ public class AddendumBlocks {
 			.noCollission()
 			.strength(0.5F)
 			.pushReaction(PushReaction.DESTROY)), CreativeModeTabs.BUILDING_BLOCKS, POLISHED_END_STONE.getWallBlock(), CompatUtil.Mods.LEPTON);
+
+	private static ToIntFunction<BlockState> litBlockEmission() {
+		return (p_50763_) -> (Boolean)p_50763_.getValue(BlockStateProperties.LIT) ? 10 : 0;
+	}
 
 }

@@ -1,5 +1,6 @@
 package co.eltrut.addendum.core;
 
+import co.eltrut.addendum.core.registry.AddendumBlockEntities;
 import co.eltrut.differentiate.core.registrator.Registrator;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
@@ -18,6 +19,7 @@ public class Addendum {
         instance = this;
 
         REGISTRATOR.register(modEventBus);
+        AddendumBlockEntities.BLOCK_ENTITY_TYPES.register(modEventBus);
         
     }
 
