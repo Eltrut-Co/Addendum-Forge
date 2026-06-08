@@ -2,9 +2,11 @@ package co.eltrut.addendum.core;
 
 import co.eltrut.addendum.core.registry.AddendumBlockEntities;
 import co.eltrut.differentiate.core.registrator.Registrator;
+import net.minecraft.client.renderer.blockentity.CampfireRenderer;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -20,7 +22,13 @@ public class Addendum {
 
         REGISTRATOR.register(modEventBus);
         AddendumBlockEntities.BLOCK_ENTITY_TYPES.register(modEventBus);
+
+        modEventBus.addListener(this::registerEntityRenderers);
         
+    }
+
+    private void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
+        event.registerBlockEntityRenderer(AddendumBlockEntities.DRAGON_CAMPFIRE.get(), CampfireRenderer::new);
     }
 
 }
