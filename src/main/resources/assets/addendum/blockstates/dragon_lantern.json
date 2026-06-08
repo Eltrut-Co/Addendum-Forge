@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "addendum:block/dragon_lantern"
+    },
+    "hanging=true": {
+      "model": "addendum:block/dragon_lantern_hanging"
+    }
+  }
+}

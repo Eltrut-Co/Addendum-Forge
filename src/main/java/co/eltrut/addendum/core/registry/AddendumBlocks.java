@@ -79,7 +79,8 @@ public class AddendumBlocks {
 	public static final DeferredBlock<Block> BLACK_SHULKER_SWIRL = HELPER.createBlock("black_shulker_swirl", () -> new Block(Block.Properties.ofFullCopy(Blocks.BLACK_SHULKER_BOX)), CreativeModeTabs.COLORED_BLOCKS);
 
 	public static final DeferredHolder<Block, Block> DRAGON_FIRE = HELPER.getDeferredRegister().register("dragon_fire", () -> new DragonFireBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).replaceable().noCollission().instabreak().lightLevel(state -> 10).sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
-	public static final DeferredBlock<Block> DRAGON_CAMPFIRE = HELPER.createBlock("dragon_campfire", () -> new DragonCampfireBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PODZOL).instrument(NoteBlockInstrument.BASS).strength(2.0F).sound(SoundType.WOOD).lightLevel(litBlockEmission()).noOcclusion().ignitedByLava()), CreativeModeTabs.FUNCTIONAL_BLOCKS);
+	public static final DeferredBlock<Block> DRAGON_CAMPFIRE = HELPER.createFollowBlock("dragon_campfire", () -> new DragonCampfireBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PODZOL).instrument(NoteBlockInstrument.BASS).strength(2.0F).sound(SoundType.WOOD).lightLevel(litBlockEmission()).noOcclusion().ignitedByLava()), CreativeModeTabs.FUNCTIONAL_BLOCKS, Blocks.SOUL_CAMPFIRE);
+	public static final DeferredBlock<Block> DRAGON_LANTERN = HELPER.createFollowBlock("dragon_lantern", () -> new LanternBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).forceSolidOn().requiresCorrectToolForDrops().strength(3.5F).sound(SoundType.LANTERN).lightLevel((p_187431_) -> 10).noOcclusion().pushReaction(PushReaction.DESTROY)), CreativeModeTabs.FUNCTIONAL_BLOCKS, Blocks.SOUL_LANTERN);
 
 	// Compat
 	public static final VariantBlocksRepo MIDORI_BRICKS = HELPER.createBlockWithVariants("midori_bricks", BlockUtil.QuarkProperties.MIDORI, CreativeModeTabs.BUILDING_BLOCKS, Blocks.PURPUR_BLOCK, CompatUtil.Mods.QUARK);
