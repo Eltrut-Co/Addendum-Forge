@@ -1,5 +1,6 @@
 package co.eltrut.addendum.common.block;
 
+import co.eltrut.addendum.core.registry.AddendumTags;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -40,7 +41,7 @@ public class DragonFireBlock extends BaseFireBlock {
     }
 
     public static boolean canSurviveOnBlock(BlockState state) {
-        return state.is(Blocks.END_STONE); //.is(BlockTags.SOUL_FIRE_BASE_BLOCKS); TODO: make different tag for this
+        return state.is(AddendumTags.DRAGON_FIRE_BASE_BLOCKS);
     }
 
 }
