@@ -7,6 +7,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.StandingAndWallBlockItem;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -19,6 +20,6 @@ public class AddendumItems {
 
     public static final ItemHelper HELPER = Addendum.REGISTRATOR.getHelper(Registries.ITEM);
 
-    public static final DeferredItem<Item> DRAGON_TORCH_ITEM = HELPER.createItem("dragon_torch", () -> new StandingAndWallBlockItem(AddendumBlocks.DRAGON_TORCH.get(), AddendumBlocks.DRAGON_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN), CreativeModeTabs.FUNCTIONAL_BLOCKS);
+    public static final DeferredItem<Item> DRAGON_TORCH_ITEM = HELPER.createFollowItem("dragon_torch", () -> new StandingAndWallBlockItem(AddendumBlocks.DRAGON_TORCH.get(), AddendumBlocks.DRAGON_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN), CreativeModeTabs.FUNCTIONAL_BLOCKS, Items.SOUL_TORCH);
 
 }

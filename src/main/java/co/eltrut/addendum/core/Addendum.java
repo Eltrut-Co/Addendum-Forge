@@ -25,9 +25,9 @@ public class Addendum {
     public Addendum(IEventBus modEventBus, ModContainer modContainer) {
         instance = this;
 
-        AddendumParticles.PARTICLE_TYPES.register(modEventBus);
         REGISTRATOR.register(modEventBus);
         AddendumBlockEntities.BLOCK_ENTITY_TYPES.register(modEventBus);
+        AddendumParticles.PARTICLE_TYPES.register(modEventBus);
 
         modEventBus.addListener(this::registerEntityRenderers);
 
