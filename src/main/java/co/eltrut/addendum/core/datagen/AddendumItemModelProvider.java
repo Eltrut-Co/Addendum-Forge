@@ -2,26 +2,27 @@ package co.eltrut.addendum.core.datagen;
 
 import co.eltrut.addendum.core.Addendum;
 import co.eltrut.addendum.core.registry.AddendumBlocks;
+import co.eltrut.differentiate.core.util.BlockUtil;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
+import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
-import net.neoforged.neoforge.registries.DeferredHolder;
 
 @EventBusSubscriber
-public class AddendumBlockStateProvider extends BlockStateProvider {
+public class AddendumItemModelProvider extends ItemModelProvider {
 
-    public AddendumBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
-        super(output, Addendum.MOD_ID, exFileHelper);
+    public AddendumItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
+        super(output, Addendum.MOD_ID, existingFileHelper);
     }
 
     @Override
-    protected void registerStatesAndModels() {
-//        AddendumBlocks.DYE_DEPOT_BLOCKS.stream().map(DeferredHolder::get).forEach(this::simpleBlock);
-        AddendumBlocks.DYE_DEPOT_SWIRLS.stream().map(DeferredHolder::get).forEach(this::simpleBlock);
+    protected void registerModels() {
+        AddendumBlocks.DYE_DEPOT_SWIRLS.forEach(s -> {
+            withExistingParent(s.getRegisteredName(), modLoc("block/" + BlockUtil.getIdFromBlock(s.get())));
+        });
     }
 
     @SubscribeEvent
@@ -30,7 +31,9 @@ public class AddendumBlockStateProvider extends BlockStateProvider {
         PackOutput packOutput = generator.getPackOutput();
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
 
-        generator.addProvider(event.includeClient(), new AddendumBlockStateProvider(packOutput, existingFileHelper));
+        generator.addProvider(event.includeClient(), new AddendumItemModelProvider(packOutput, existingFileHelper));
+
     }
+
 
 }

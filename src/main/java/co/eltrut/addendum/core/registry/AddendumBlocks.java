@@ -20,6 +20,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.registries.DeferredBlock;
 
+import java.util.List;
 import java.util.Map;
 
 @EventBusSubscriber(modid = Addendum.MOD_ID)
@@ -142,5 +143,11 @@ public class AddendumBlocks {
 	public static final DeferredBlock<Block> TAN_SHULKER_SWIRL = HELPER.createBlock("tan_shulker_swirl", () -> new Block(Block.Properties.ofFullCopy(Blocks.SHULKER_BOX).pushReaction(PushReaction.BLOCK).mapColor(MAP_COLORS.get("tan"))), CreativeModeTabs.COLORED_BLOCKS, CompatUtil.Mods.DYE_DEPOT);
 	public static final DeferredBlock<Block> TEAL_SHULKER_SWIRL = HELPER.createBlock("teal_shulker_swirl", () -> new Block(Block.Properties.ofFullCopy(Blocks.SHULKER_BOX).pushReaction(PushReaction.BLOCK).mapColor(MAP_COLORS.get("teal"))), CreativeModeTabs.COLORED_BLOCKS, CompatUtil.Mods.DYE_DEPOT);
 	public static final DeferredBlock<Block> VERDANT_SHULKER_SWIRL = HELPER.createBlock("verdant_shulker_swirl", () -> new Block(Block.Properties.ofFullCopy(Blocks.SHULKER_BOX).pushReaction(PushReaction.BLOCK).mapColor(MAP_COLORS.get("verdant"))), CreativeModeTabs.COLORED_BLOCKS, CompatUtil.Mods.DYE_DEPOT);
+
+	public static final List<DeferredBlock<Block>> DYE_DEPOT_BLOCKS = List.of(AMBER_SHULKER_BLOCK, AQUA_SHULKER_BLOCK, BEIGE_SHULKER_BLOCK, CORAL_SHULKER_BLOCK, FOREST_SHULKER_BLOCK, GINGER_SHULKER_BLOCK,
+			INDIGO_SHULKER_BLOCK, MAROON_SHULKER_BLOCK, MINT_SHULKER_BLOCK, NAVY_SHULKER_BLOCK, OLIVE_SHULKER_BLOCK, ROSE_SHULKER_BLOCK, SLATE_SHULKER_BLOCK, TAN_SHULKER_BLOCK, TEAL_SHULKER_BLOCK, VERDANT_SHULKER_BLOCK);
+
+	public static final List<DeferredBlock<Block>> DYE_DEPOT_SWIRLS = List.of(AMBER_SHULKER_SWIRL, AQUA_SHULKER_SWIRL, BEIGE_SHULKER_SWIRL, CORAL_SHULKER_SWIRL, FOREST_SHULKER_SWIRL, GINGER_SHULKER_SWIRL,
+			INDIGO_SHULKER_SWIRL, MAROON_SHULKER_SWIRL, MINT_SHULKER_SWIRL, NAVY_SHULKER_SWIRL, OLIVE_SHULKER_SWIRL, ROSE_SHULKER_SWIRL, SLATE_SHULKER_SWIRL, TAN_SHULKER_SWIRL, TEAL_SHULKER_SWIRL, VERDANT_SHULKER_SWIRL);
 
 }

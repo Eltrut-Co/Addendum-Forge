@@ -29,27 +29,27 @@ public class AddendumRecipeProvider extends DifferentiateRecipeProvider {
     @Override
     protected void buildRecipes(RecipeOutput output) {
 
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(AddendumBlocks.POLISHED_END_STONE.getBlock()), RecipeCategory.BUILDING_BLOCKS, Blocks.END_STONE_BRICKS)
-                .unlockedBy("has_block", has(AddendumBlocks.POLISHED_END_STONE.getBlock()))
-                .save(output, ResourceLocation.fromNamespaceAndPath(Addendum.MOD_ID, "stonecutting/end_stone_bricks"));
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(AddendumBlocks.POLISHED_END_STONE.getBlock()), RecipeCategory.BUILDING_BLOCKS, Blocks.END_STONE_BRICK_SLAB, 2)
-                .unlockedBy("has_block", has(AddendumBlocks.POLISHED_END_STONE.getBlock()))
-                .save(output, ResourceLocation.fromNamespaceAndPath(Addendum.MOD_ID, "stonecutting/end_stone_brick_slab"));
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(AddendumBlocks.POLISHED_END_STONE.getBlock()), RecipeCategory.BUILDING_BLOCKS, Blocks.END_STONE_BRICK_STAIRS)
-                .unlockedBy("has_block", has(AddendumBlocks.POLISHED_END_STONE.getBlock()))
-                .save(output, ResourceLocation.fromNamespaceAndPath(Addendum.MOD_ID, "stonecutting/end_stone_brick_stairs"));
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(AddendumBlocks.POLISHED_END_STONE.getBlock()), RecipeCategory.BUILDING_BLOCKS, Blocks.END_STONE_BRICK_WALL)
-                .unlockedBy("has_block", has(AddendumBlocks.POLISHED_END_STONE.getBlock()))
-                .save(output, ResourceLocation.fromNamespaceAndPath(Addendum.MOD_ID, "stonecutting/end_stone_brick_wall"));
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.PURPUR_BLOCK, AddendumBlocks.PURPUR_BRICKS.getBlock()),  RecipeCategory.BUILDING_BLOCKS, AddendumBlocks.CHISELED_PURPUR_BRICKS)
-                .unlockedBy("has_block", has(Blocks.PURPUR_BLOCK))
-                .save(output,  ResourceLocation.fromNamespaceAndPath(Addendum.MOD_ID, "stonecutting/chiseled_purpur_bricks"));
-
-        // VariantRepo recipes
-        this.buildStonecuttingRecipes(List.of(Blocks.END_STONE), AddendumBlocks.END_STONE, output);
-        this.buildStonecuttingRecipes(List.of(Blocks.END_STONE, AddendumBlocks.POLISHED_END_STONE.getBlock().get()), AddendumBlocks.POLISHED_END_STONE, output);
-        this.buildStonecuttingRecipes(List.of(AddendumBlocks.CHORUSY_END_STONE_BRICKS.getBlock().get()), AddendumBlocks.CHORUSY_END_STONE_BRICKS, output);
-        this.buildStonecuttingRecipes(List.of(Blocks.PURPUR_BLOCK, AddendumBlocks.PURPUR_BRICKS.getBlock().get()), AddendumBlocks.PURPUR_BRICKS, output);
+//        SingleItemRecipeBuilder.stonecutting(Ingredient.of(AddendumBlocks.POLISHED_END_STONE.getBlock()), RecipeCategory.BUILDING_BLOCKS, Blocks.END_STONE_BRICKS)
+//                .unlockedBy("has_block", has(AddendumBlocks.POLISHED_END_STONE.getBlock()))
+//                .save(output, ResourceLocation.fromNamespaceAndPath(Addendum.MOD_ID, "stonecutting/end_stone_bricks"));
+//        SingleItemRecipeBuilder.stonecutting(Ingredient.of(AddendumBlocks.POLISHED_END_STONE.getBlock()), RecipeCategory.BUILDING_BLOCKS, Blocks.END_STONE_BRICK_SLAB, 2)
+//                .unlockedBy("has_block", has(AddendumBlocks.POLISHED_END_STONE.getBlock()))
+//                .save(output, ResourceLocation.fromNamespaceAndPath(Addendum.MOD_ID, "stonecutting/end_stone_brick_slab"));
+//        SingleItemRecipeBuilder.stonecutting(Ingredient.of(AddendumBlocks.POLISHED_END_STONE.getBlock()), RecipeCategory.BUILDING_BLOCKS, Blocks.END_STONE_BRICK_STAIRS)
+//                .unlockedBy("has_block", has(AddendumBlocks.POLISHED_END_STONE.getBlock()))
+//                .save(output, ResourceLocation.fromNamespaceAndPath(Addendum.MOD_ID, "stonecutting/end_stone_brick_stairs"));
+//        SingleItemRecipeBuilder.stonecutting(Ingredient.of(AddendumBlocks.POLISHED_END_STONE.getBlock()), RecipeCategory.BUILDING_BLOCKS, Blocks.END_STONE_BRICK_WALL)
+//                .unlockedBy("has_block", has(AddendumBlocks.POLISHED_END_STONE.getBlock()))
+//                .save(output, ResourceLocation.fromNamespaceAndPath(Addendum.MOD_ID, "stonecutting/end_stone_brick_wall"));
+//        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.PURPUR_BLOCK, AddendumBlocks.PURPUR_BRICKS.getBlock()),  RecipeCategory.BUILDING_BLOCKS, AddendumBlocks.CHISELED_PURPUR_BRICKS)
+//                .unlockedBy("has_block", has(Blocks.PURPUR_BLOCK))
+//                .save(output,  ResourceLocation.fromNamespaceAndPath(Addendum.MOD_ID, "stonecutting/chiseled_purpur_bricks"));
+//
+//        // VariantRepo recipes
+//        this.buildStonecuttingRecipes(List.of(Blocks.END_STONE), AddendumBlocks.END_STONE, output);
+//        this.buildStonecuttingRecipes(List.of(Blocks.END_STONE, AddendumBlocks.POLISHED_END_STONE.getBlock().get()), AddendumBlocks.POLISHED_END_STONE, output);
+//        this.buildStonecuttingRecipes(List.of(AddendumBlocks.CHORUSY_END_STONE_BRICKS.getBlock().get()), AddendumBlocks.CHORUSY_END_STONE_BRICKS, output);
+//        this.buildStonecuttingRecipes(List.of(Blocks.PURPUR_BLOCK, AddendumBlocks.PURPUR_BRICKS.getBlock().get()), AddendumBlocks.PURPUR_BRICKS, output);
 
     }
 
