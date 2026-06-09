@@ -8,6 +8,7 @@ import co.eltrut.differentiate.core.event.LoadEvent;
 import co.eltrut.differentiate.core.registrator.BlockHelper;
 import co.eltrut.differentiate.core.util.BlockUtil;
 import co.eltrut.differentiate.core.util.CompatUtil;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.*;
@@ -81,6 +82,8 @@ public class AddendumBlocks {
 	public static final DeferredHolder<Block, Block> DRAGON_FIRE = HELPER.getDeferredRegister().register("dragon_fire", () -> new DragonFireBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).replaceable().noCollission().instabreak().lightLevel(state -> 10).sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
 	public static final DeferredBlock<Block> DRAGON_CAMPFIRE = HELPER.createFollowBlock("dragon_campfire", () -> new DragonCampfireBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PODZOL).instrument(NoteBlockInstrument.BASS).strength(2.0F).sound(SoundType.WOOD).lightLevel(litBlockEmission()).noOcclusion().ignitedByLava()), CreativeModeTabs.FUNCTIONAL_BLOCKS, Blocks.SOUL_CAMPFIRE);
 	public static final DeferredBlock<Block> DRAGON_LANTERN = HELPER.createFollowBlock("dragon_lantern", () -> new LanternBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).forceSolidOn().requiresCorrectToolForDrops().strength(3.5F).sound(SoundType.LANTERN).lightLevel((p_187431_) -> 10).noOcclusion().pushReaction(PushReaction.DESTROY)), CreativeModeTabs.FUNCTIONAL_BLOCKS, Blocks.SOUL_LANTERN);
+	public static final DeferredHolder<Block, Block> DRAGON_TORCH = HELPER.getDeferredRegister().register("dragon_torch", () -> new TorchBlock(ParticleTypes.SOUL_FIRE_FLAME, BlockBehaviour.Properties.of().noCollission().instabreak().lightLevel((p_50876_) -> 10).sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY)));
+	public static final DeferredHolder<Block, Block> DRAGON_WALL_TORCH = HELPER.getDeferredRegister().register("dragon_wall_torch", () -> new WallTorchBlock(ParticleTypes.SOUL_FIRE_FLAME, BlockBehaviour.Properties.of().noCollission().instabreak().lightLevel((p_50874_) -> 10).sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY)));
 
 	// Compat
 	public static final VariantBlocksRepo MIDORI_BRICKS = HELPER.createBlockWithVariants("midori_bricks", BlockUtil.QuarkProperties.MIDORI, CreativeModeTabs.BUILDING_BLOCKS, Blocks.PURPUR_BLOCK, CompatUtil.Mods.QUARK);

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "addendum:block/dragon_wall_torch"
+    },
+    "facing=north": {
+      "model": "addendum:block/dragon_wall_torch",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "addendum:block/dragon_wall_torch",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "addendum:block/dragon_wall_torch",
+      "y": 180
+    }
+  }
+}
