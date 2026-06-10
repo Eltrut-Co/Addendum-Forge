@@ -20,9 +20,9 @@ public class AddendumItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        AddendumBlocks.DYE_DEPOT_SWIRLS.forEach(s -> {
-            withExistingParent(s.getRegisteredName(), modLoc("block/" + BlockUtil.getIdFromBlock(s.get())));
-        });
+//        AddendumBlocks.DYE_DEPOT_SWIRLS.forEach(s -> {
+//            withExistingParent(s.getRegisteredName(), modLoc("block/" + BlockUtil.getIdFromBlock(s.get())));
+//        });
     }
 
     @SubscribeEvent

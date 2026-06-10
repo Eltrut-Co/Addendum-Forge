@@ -21,7 +21,7 @@ public class AddendumBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
 //        AddendumBlocks.DYE_DEPOT_BLOCKS.stream().map(DeferredHolder::get).forEach(this::simpleBlock);
-        AddendumBlocks.DYE_DEPOT_SWIRLS.stream().map(DeferredHolder::get).forEach(this::simpleBlock);
+//        AddendumBlocks.DYE_DEPOT_SWIRLS.stream().map(DeferredHolder::get).forEach(this::simpleBlock);
     }
 
     @SubscribeEvent
