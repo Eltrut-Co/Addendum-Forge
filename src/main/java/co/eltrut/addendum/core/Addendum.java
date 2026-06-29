@@ -46,6 +46,7 @@ public class Addendum {
 
     private void registerParticleProviders(RegisterParticleProvidersEvent event) {
         event.registerSpriteSet(AddendumParticles.DRAGON_FIRE_FLAME.get(), FlameParticle.Provider::new);
+        event.registerSpriteSet(AddendumParticles.SMALL_DRAGON_FIRE_FLAME.get(), FlameParticle.SmallFlameProvider::new);
     }
 
 }

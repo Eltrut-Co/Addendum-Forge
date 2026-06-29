@@ -1,9 +1,6 @@
 package co.eltrut.addendum.core.registry;
 
-import co.eltrut.addendum.common.block.DragonCampfireBlock;
-import co.eltrut.addendum.common.block.DragonFireBlock;
-import co.eltrut.addendum.common.block.DragonTorchBlock;
-import co.eltrut.addendum.common.block.DragonWallTorchBlock;
+import co.eltrut.addendum.common.block.*;
 import co.eltrut.addendum.core.Addendum;
 import co.eltrut.differentiate.common.repo.VariantBlocksRepo;
 import co.eltrut.differentiate.core.event.LoadEvent;
@@ -12,6 +9,7 @@ import co.eltrut.differentiate.core.util.BlockUtil;
 import co.eltrut.differentiate.core.util.CompatUtil;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
@@ -100,6 +98,9 @@ public class AddendumBlocks {
 			.noCollission()
 			.strength(0.5F)
 			.pushReaction(PushReaction.DESTROY)), CreativeModeTabs.BUILDING_BLOCKS, POLISHED_END_STONE.getWallBlock(), CompatUtil.Mods.LEPTON);
+
+	public static final DeferredBlock<Block> DRAGON_CANDLE = HELPER.createFollowBlock("dragon_candle", () -> new DragonCandleBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).noOcclusion().strength(0.1F).sound(SoundType.CANDLE).lightLevel(CandleBlock.LIGHT_EMISSION).pushReaction(PushReaction.DESTROY)), CreativeModeTabs.FUNCTIONAL_BLOCKS, Items.CANDLE, CompatUtil.Mods.BUZZIER_BEES);
+	public static final DeferredHolder<Block, Block> DRAGON_CANDLE_CAKE = HELPER.getDeferredRegister().register("dragon_candle_cake", () -> new DragonCandleCakeBlock(DRAGON_CANDLE.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.CANDLE_CAKE)));
 
 	private static ToIntFunction<BlockState> litBlockEmission() {
 		return (p_50763_) -> (Boolean)p_50763_.getValue(BlockStateProperties.LIT) ? 10 : 0;

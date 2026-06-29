@@ -1,13 +1,10 @@
 package co.eltrut.addendum.core.mixin;
 
+import co.eltrut.addendum.common.block.DragonCandleBlock;
 import co.eltrut.addendum.core.AddendumConfig;
 import co.eltrut.addendum.core.registry.AddendumParticles;
 import co.eltrut.addendum.core.registry.AddendumTags;
-import co.eltrut.differentiate.core.util.CompatUtil;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.AbstractCandleBlock;
@@ -32,15 +29,7 @@ public class AbstractCandleBlockMixin extends Block {
         BlockState testState = level.getBlockState(testPos);
 
         if (testState.is(AddendumTags.DRAGON_FIRE_BASE_BLOCKS) && AddendumConfig.CONFIG.dragonCandles.get()) {
-            float f = random.nextFloat();
-            if (f < 0.3F) {
-                level.addParticle(ParticleTypes.SMOKE, offset.x, offset.y, offset.z, 0.0F, 0.0F, 0.0F);
-                if (f < 0.17F) {
-                    level.playLocalSound(offset.x + (double)0.5F, offset.y + (double)0.5F, offset.z + (double)0.5F, SoundEvents.CANDLE_AMBIENT, SoundSource.BLOCKS, 1.0F + random.nextFloat(), random.nextFloat() * 0.7F + 0.3F, false);
-                }
-            }
-
-            level.addParticle(AddendumParticles.DRAGON_FIRE_FLAME.get(), offset.x, offset.y, offset.z, 0.0F, 0.0F, 0.0F);
+            DragonCandleBlock.addParticlesAndSound(level, offset, random, AddendumParticles.DRAGON_FIRE_FLAME.get());
             info.cancel();
         }
     }
