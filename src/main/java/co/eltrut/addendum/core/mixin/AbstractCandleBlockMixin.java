@@ -1,5 +1,6 @@
 package co.eltrut.addendum.core.mixin;
 
+import co.eltrut.addendum.core.AddendumConfig;
 import co.eltrut.addendum.core.registry.AddendumParticles;
 import co.eltrut.addendum.core.registry.AddendumTags;
 import co.eltrut.differentiate.core.util.CompatUtil;
@@ -30,7 +31,7 @@ public class AbstractCandleBlockMixin extends Block {
         BlockPos testPos = BlockPos.containing(offset.x, offset.y - 1, offset.z);
         BlockState testState = level.getBlockState(testPos);
 
-        if (testState.is(AddendumTags.DRAGON_FIRE_BASE_BLOCKS) && CompatUtil.areModsLoaded(CompatUtil.Mods.QUARK)) {
+        if (testState.is(AddendumTags.DRAGON_FIRE_BASE_BLOCKS) && AddendumConfig.CONFIG.dragonCandles.get()) {
             float f = random.nextFloat();
             if (f < 0.3F) {
                 level.addParticle(ParticleTypes.SMOKE, offset.x, offset.y, offset.z, 0.0F, 0.0F, 0.0F);

@@ -9,6 +9,7 @@ import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.loading.FMLEnvironment;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.event.RegisterParticleProvidersEvent;
@@ -24,6 +25,8 @@ public class Addendum {
 
     public Addendum(IEventBus modEventBus, ModContainer modContainer) {
         instance = this;
+
+        modContainer.registerConfig(ModConfig.Type.COMMON, AddendumConfig.SPEC);
 
         REGISTRATOR.register(modEventBus);
         AddendumBlockEntities.BLOCK_ENTITY_TYPES.register(modEventBus);
