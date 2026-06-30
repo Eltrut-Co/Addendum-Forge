@@ -157,6 +157,9 @@ dependencies {
     implementation ("maven.modrinth:zeta:${zeta_version}")
     implementation ("maven.modrinth:quark:${quark_version}")
 
+    implementation ("maven.modrinth:blueprint:${blueprint_version}")
+    implementation ("maven.modrinth:buzzier-bees:${bb_version}")
+
     compileOnly("mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}")
     runtimeOnly("mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}")
 

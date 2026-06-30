@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "addendum:block/dragon_candle_cake"
+    },
+    "lit=true": {
+      "model": "addendum:block/dragon_candle_cake_lit"
+    }
+  }
+}
