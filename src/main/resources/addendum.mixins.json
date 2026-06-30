@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "co.eltrut.addendum.core.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "refmap": "addendum.refmap.json",
+  "mixins": [
+    "AbstractCandleBlockMixin",
+    "BaseFireBlockMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

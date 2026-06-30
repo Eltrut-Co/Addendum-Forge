@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:end_stone",
+    "addendum:end_stone_slab",
+    "addendum:end_stone_stairs",
+    "addendum:end_stone_wall",
+    "addendum:end_stone_vertical_slab",
+    "addendum:polished_end_stone",
+    "addendum:polished_end_stone_slab",
+    "addendum:polished_end_stone_stairs",
+    "addendum:polished_end_stone_wall",
+    "addendum:polished_end_stone_vertical_slab",
+    "minecraft:end_stone_bricks",
+    "minecraft:end_stone_brick_slab",
+    "minecraft:end_stone_brick_stairs",
+    "minecraft:end_stone_brick_wall",
+    {
+      "id": "quark:end_stone_brick_vertical_slab",
+      "required": false
+    }
+  ]
+}

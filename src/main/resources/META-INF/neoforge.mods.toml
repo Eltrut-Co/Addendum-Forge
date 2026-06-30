@@ -2,6 +2,10 @@ modLoader="javafml"
 loaderVersion="[2,)"
 license="GNU LGPL 2.1"
 issueTrackerURL="https://github.com/Eltrut-Co/Addendum/issues"
+
+[[mixins]]
+config = "addendum.mixins.json"
+
 [[mods]]
 modId="addendum"
 version="3.0.2"

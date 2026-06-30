@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "addendum:dragon_lantern",
+    "minecraft:lantern",
+    "minecraft:soul_lantern"
+  ]
+}
