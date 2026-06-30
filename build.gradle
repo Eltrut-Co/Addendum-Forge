@@ -164,6 +164,7 @@ dependencies {
     compileOnly("mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}")
     runtimeOnly("mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}")
 
+    implementation ("maven.modrinth:dye-depot:2.1.0-neoforge")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
